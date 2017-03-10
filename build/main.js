@@ -44,10 +44,6 @@ var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
 
-var _config2 = require('./config');
-
-var _config3 = _interopRequireDefault(_config2);
-
 var _posts = require('./routes/posts');
 
 var _posts2 = _interopRequireDefault(_posts);
@@ -64,9 +60,9 @@ var devPort = 3001;
 if (process.env.NODE_ENV == 'development') {
   console.log('Server is running on development mode');
 
-  var _config = require('../webpack.dev.config');
-  var compiler = (0, _webpack2.default)(_config);
-  var devServer = new _webpackDevServer2.default(compiler, _config.devServer);
+  var config = require('../webpack.dev.config');
+  var compiler = (0, _webpack2.default)(config);
+  var devServer = new _webpackDevServer2.default(compiler, config.devServer);
   devServer.listen(devPort, function () {
     console.log('webpack-dev-server is listening on port', devPort);
   });
