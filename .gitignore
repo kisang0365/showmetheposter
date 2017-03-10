@@ -3,3 +3,4 @@ config.js
 package.json
 webpack.config.js
 webpack.dev.config.js
+src/config.js
