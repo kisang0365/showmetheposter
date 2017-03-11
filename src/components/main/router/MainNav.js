@@ -5,10 +5,10 @@ import Router from 'react-router/BrowserRouter';
 import {titleStyle, linkColor} from '../../../css';
 
 export default class MainNav extends React.Component  {
-/*
+
     handleOpinionClick = () => {
       window.location.href= '/opinion';
-    }*/
+    }
     handlePartnerClick = () => {
       window.location.href= '/partner';
     }
