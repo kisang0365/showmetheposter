@@ -77,7 +77,7 @@ app.use((0, _morgan2.default)('dev'));
 app.use('/', _express2.default.static(__dirname + '/../public'));
 
 app.get('/', function (req, res) {
-  res.sendFile(_path2.default.join(__dirname, '..', 'public', 'index.html'));
+  res.sendFile('/index.html');
 });
 app.get('/home', function (req, res) {
   res.sendFile(_path2.default.join(__dirname, '..', 'public', 'index.html'));

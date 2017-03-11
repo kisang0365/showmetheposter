@@ -1,6 +1,5 @@
 import React from 'react';
 import {Carousel, Image} from 'react-bootstrap';
-import config from '../../../config';
 import MediaQuery from 'react-responsive';
 
 export const bannerA ={
@@ -31,10 +30,9 @@ export const largeImgSize = {
 
   export default class TopBanner extends React.Component  {
       render() {
-        var link = document.location.href;
-
   	      return(
-            <Carousel>
+            
+            <Carousel>                
               <a style={bannerA} href="/category">
                 <Carousel.Item >
                   <MediaQuery minDeviceWidth={1025}>

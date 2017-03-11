@@ -13,7 +13,7 @@ export default class Main  extends React.Component  {
           <Router>
             <div>
               <MainNav/>
-                <Match exactly pattern="/" component={Home} />
+                <Match exactly pattern="/cate" component={Home} />
                 <Match pattern="/opinion" component={Opinion} />
                 <Match pattern="/partner" component={Partner} />
             </div>
