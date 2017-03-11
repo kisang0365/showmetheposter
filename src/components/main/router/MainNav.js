@@ -25,11 +25,11 @@ export default class MainNav extends React.Component  {
               </Navbar.Header>
               <Navbar.Collapse>
                 <Nav>
-                  <NavItem eventKey={1} ><a onClick={this.handleCategoryClick} style={linkColor}>경품정보</a></NavItem>
+                  <NavItem componentClass="span" eventKey={1} ><a onClick={this.handleCategoryClick} style={linkColor}>경품정보</a></NavItem>
                 </Nav>
                 <Nav pullRight>
-                  <NavItem eventKey={1} ><a onClick={this.handleOpinionClick} style={linkColor}>문의 사항</a></NavItem>
-                  <NavItem eventKey={2} ><a onClick={this.handlePartnerClick} style={linkColor}>광고 문의</a></NavItem>
+                  <NavItem componentClass="span" eventKey={1} ><a onClick={this.handleOpinionClick} style={linkColor}>문의 사항</a></NavItem>
+                  <NavItem componentClass="span" eventKey={2} ><a onClick={this.handlePartnerClick} style={linkColor}>광고 문의</a></NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
