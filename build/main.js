@@ -84,6 +84,9 @@ app.get('/opinion', function (req, res) {
 app.get('/partner', function (req, res) {
   res.sendFile(_path2.default.join(__dirname, '..', 'public', 'index.html'));
 });
+app.get('/advertise', function (req, res) {
+  res.sendFile(_path2.default.join(__dirname, '..', 'public', 'index.html'));
+});
 
 app.use('/api', require('./routes/api'));
 
