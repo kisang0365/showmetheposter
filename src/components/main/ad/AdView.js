@@ -15,8 +15,6 @@ class AdView extends React.Component  {
 
   constructor(props) {
       super(props);
-      this.refresh = this.refresh.bind(this);
-      this.refresh();
     }
 
   componentDidUpdate(prevProps, prevState){
