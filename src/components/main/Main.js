@@ -2,6 +2,7 @@ import React from 'react';
 import MainNav from './router/MainNav';
 import TopBanner from './router/TopBanner';
 import Home from './router/Home';
+import Ad from './ad/AdView'
 import Opinion from './router/Opinion';
 import Partner from './router/Partner';
 import { BrowserRouter, Match, Miss, Link } from 'react-router';
@@ -14,7 +15,7 @@ export default class Main  extends React.Component  {
             <div>
               <MainNav/>
                 <Match exactly pattern="/" component={Home} />
-                <Match exactly pattern="/advertise" component={Advertise} />
+                <Match exactly pattern="/advertise" component={Ad} />
                 <Match pattern="/opinion" component={Opinion} />
                 <Match pattern="/partner" component={Partner} />
             </div>

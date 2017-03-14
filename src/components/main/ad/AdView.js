@@ -6,7 +6,10 @@ import {colCentered} from '../../../css';
 import ItemList from './ItemList';
 import PageItem from './PageItem';
 
+import axios from 'axios';
+import { connect } from 'react-redux';
 import * as actions from '../../../actions';
+import config from '../../../config';
 
 class AdView extends React.Component  {
 
@@ -72,5 +75,5 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(CosmeticView);
+export default connect(mapStateToProps, mapDispatchToProps)(AdView);
 //export default CategoryView;
