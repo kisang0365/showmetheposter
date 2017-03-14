@@ -32,3 +32,24 @@ export function changePage() {
         type: types.CHANGE_PAGE
     };
 }
+
+
+
+export function adInputData({name, url, picUrl, inputTime, expired}){
+  return function (dispatch){
+    var instance = axios.create({
+        baseURL: API_URL,
+        timeout: 2000,
+        headers: {'x-access-token': localStorage.getItem('token') }
+    });
+
+    instance.post(`/ad/input`, {name,url,picUrl, inputTime,expired })
+    .then(response => {
+      dispatch({ type: types.AD_INPUT_SUCCESS });
+      alert("input success");
+    })
+    .catch((error) => {
+      errorHandler(dispatch, error.response, types.AD_INPUT_FAILED);
+    });
+  }
+}

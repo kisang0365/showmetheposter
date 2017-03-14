@@ -24,7 +24,6 @@ class AdView extends React.Component  {
         this.props.scopeMin != prevProps.scopeMin ||
         this.props.scopeMax != prevProps.scopeMax ){
 
-      //  this.refresh();
       }
     }
 
