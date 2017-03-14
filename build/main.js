@@ -44,10 +44,6 @@ var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
 
-var _posts = require('./routes/posts');
-
-var _posts2 = _interopRequireDefault(_posts);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _mongoose2.default.Promise = global.Promise;
@@ -89,7 +85,7 @@ app.get('/partner', function (req, res) {
   res.sendFile(_path2.default.join(__dirname, '..', 'public', 'index.html'));
 });
 
-app.use('/posts', _posts2.default);
+app.use('/api', require('./routes/api'));
 
 _http2.default.createServer(app).listen(port, function () {
   console.log("Http server listening on port " + port);

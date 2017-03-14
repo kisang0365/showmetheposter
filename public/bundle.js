@@ -18845,7 +18845,7 @@ var Main = function (_React$Component) {
           'div',
           null,
           _react2.default.createElement(_MainNav2.default, null),
-          _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/cate', component: _Home2.default }),
+          _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/', component: _Home2.default }),
           _react2.default.createElement(_reactRouter.Match, { pattern: '/opinion', component: _Opinion2.default }),
           _react2.default.createElement(_reactRouter.Match, { pattern: '/partner', component: _Partner2.default })
         )
