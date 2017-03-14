@@ -44,10 +44,6 @@ class AdView extends React.Component  {
         }
     }
 
-
-
-}
-
 const mapStateToProps = (state) =>{
   return {
     sortBy:state.getList.sortBy,    //recentu or recentd or priceu or priced
