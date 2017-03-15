@@ -66,4 +66,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, { AdInputData })(form(AdInput));
+export default connect(mapStateToProps, { adInputData })(form(AdInput));
