@@ -20,7 +20,7 @@ class ItemList extends React.Component{
               <AdItem item={this.props.ads[2]}/>
             </Col>
             <Col xs={6} md={3} >
-              <Ad item={this.props.ads[3]}/>
+              <Aditem={this.props.ads[3]}/>
             </Col>
           </Row>
         </Grid>
