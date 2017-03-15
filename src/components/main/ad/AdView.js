@@ -28,7 +28,7 @@ class AdView extends React.Component  {
     }
 
     render() {
-            const {nowPage, listPage,ads} = this.props;
+            const {nowPage, listPage, ads} = this.props;
 
     	      return(
               <div>
