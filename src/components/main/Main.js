@@ -15,7 +15,7 @@ export default class Main  extends React.Component  {
             <div>
               <MainNav/>
                 <Match exactly pattern="/" component={Home} />
-                <Match exactly pattern="/advertise" component={Ad} />
+                <Match pattern="/advertise" component={Ad} />
                 <Match pattern="/opinion" component={Opinion} />
                 <Match pattern="/partner" component={Partner} />
             </div>
