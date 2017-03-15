@@ -32,9 +32,9 @@ class AdView extends React.Component  {
 
     	      return(
               <div>
-                <ItemList products={products.slice(0,4)}/>
-                <ItemList products={products.slice(4,8)}/>
-                <ItemList products={products.slice(8,12)}/>
+                <ItemList ads={products.slice(0,4)}/>
+                <ItemList ads={products.slice(4,8)}/>
+                <ItemList ads={products.slice(8,12)}/>
 
                 <PageItem onPageClick={this.props.handleOnPageChange} pages={listPage} nowPage={nowPage} />
                 <br/><br/><br/>
