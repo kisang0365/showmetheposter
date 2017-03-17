@@ -15,7 +15,7 @@ export default class App extends React.Component {
               <Match pattern="/advertise" component={Main} />
               <Match pattern="/opinion" component={Main} />
               <Match pattern="/partner" component={Main} />
-              <Match pattern="/post/apl/adInput" component={AdInput} />
+              <Match pattern="/post/apl/adInput" component={Main} />
               <Miss component={NoMatch}/>
           </div>
         </Router>
