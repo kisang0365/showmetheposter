@@ -14,8 +14,6 @@ const form = reduxForm({
 
 class AdInput  extends React.Component  {
     handleFormSubmit(formProps) {
-      formProps.inputTime = formProps.inputTime==undefined? "undefined" : formProps.inputTime;
-      formProps.expired = formProps.expired==undefined? "undefined" : formProps.expired;
       this.props.adInputData(formProps);
     }
 
