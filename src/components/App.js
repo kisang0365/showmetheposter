@@ -3,6 +3,7 @@ import Main from './main/Main';
 import NoMatch from './main/router/NoMatch';
 import { BrowserRouter, Match, Miss, Link } from 'react-router';
 import Router from 'react-router/BrowserRouter';
+import Home from './main/router/Home';
 import AdInput from './admin/AdInput'
 
 
@@ -15,7 +16,7 @@ export default class App extends React.Component {
               <Match pattern="/advertise" component={Main} />
               <Match pattern="/opinion" component={Main} />
               <Match pattern="/partner" component={Main} />
-              <Match pattern="/post/apl/adInput" component={Main} />
+              <Match pattern="/post/apl/adInput" component={AdInput} />
               <Miss component={NoMatch}/>
           </div>
         </Router>

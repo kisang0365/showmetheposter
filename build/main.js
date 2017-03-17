@@ -73,11 +73,10 @@ app.use(_bodyParser2.default.json());
 app.use((0, _cookieParser2.default)());
 // print the request log on console
 app.use((0, _morgan2.default)('dev'));
-
 app.use('/', _express2.default.static(__dirname + '/../public'));
 
 app.get('/', function (req, res) {
-  res.sendFile('/index.html');
+  res.sendFile(_path2.default.join(__dirname, '..', 'public', 'index.html'));
 });
 app.get('/home', function (req, res) {
   res.sendFile(_path2.default.join(__dirname, '..', 'public', 'index.html'));
