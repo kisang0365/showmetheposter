@@ -36,30 +36,15 @@ function errorMessage(res) {
 }
 
 exports.inputData = function (req, res) {
-  var product = new AdItem();
+  var ad = new AdItem();
 
-  product.name = req.body.name;
-  product.url = req.body.url;
-  product.picUrl = req.body.picUrl;
+  ad.name = req.body.name;
+  ad.url = req.body.url;
+  ad.picUrl = req.body.picUrl;
 
-  product.view = 0;
+  ad.view = 0;
 
-  product.expire = req.body.expired;
-
-  if (req.body.inputTime == "undefined" || req.body.inputTime == undefined) {
-    var date = new Date();
-
-    var a = date.getFullYear() + "" + (date.getMonth() < 9 ? "0" + (date.getMonth() + 1) : "" + (date.getMonth() + 1)) + "";
-    var b = date.getDate() < 10 ? "0" + date.getDate() : "" + date.getDate();
-
-    product.inputTime = a + b;
-  } else {
-    product.inputTime = req.body.inputTime;
-  }
-
-  if (product.expire == "undefined" || product.expire == undefined) {
-    product.expire = "99999999";
-  }
+  ad.expire = req.body.expired;
 
   product.save(function (err) {
     if (err) {
