@@ -59,8 +59,6 @@ class AdInput  extends React.Component  {
 
 function mapStateToProps(state) {
   return {
-    errorMessage: state.auth.error,
-    message: state.auth.message
   };
 }
 
