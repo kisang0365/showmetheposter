@@ -30,10 +30,6 @@ class AdInput  extends React.Component  {
                     <Field name="name" className="form-control" component="input" type="text" />
                   </div>
                   <div>
-                    <label>name</label>
-                    <Field name="name" className="form-control" component="input" type="text" />
-                  </div>
-                  <div>
                     <label>url (클릭시 연결된 url)</label>
                     <Field name="url" className="form-control" component="input" type="text" />
                   </div>
