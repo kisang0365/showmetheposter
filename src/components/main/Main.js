@@ -18,8 +18,6 @@ export default class Main  extends React.Component  {
                 <Match pattern="/advertise" component={Ad} />
                 <Match pattern="/opinion" component={Opinion} />
                 <Match pattern="/partner" component={Partner} />
-                <Match pattern="/post/apl/adInput" component={Home} />
-
             </div>
           </Router>
         );
