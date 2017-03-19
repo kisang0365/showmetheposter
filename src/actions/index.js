@@ -40,6 +40,7 @@ export function adInputData({name, url, picUrl, inputTime, expired}){
     var instance = axios.create({
         baseURL: API_URL,
         timeout: 2000,
+        headers: {'x-access-token': localStorage.getItem('token') }
     });
 
     instance.post(`/ad/input`, {name,url,picUrl, inputTime,expired })
