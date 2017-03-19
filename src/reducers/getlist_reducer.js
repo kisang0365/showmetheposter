@@ -2,7 +2,7 @@ import {
   CHANGE_SORTBY,
   CHANGE_NOWPAGE,
   CHAGNE_LISTPAGE,
-  CHANGE_OPTION
+  CHANGE_OPTION,
   CHANGE_PAGE} from '../actions/types';
 
 const INITIAL_STATE = {
