@@ -5207,7 +5207,7 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 
 module.exports = {
    'CLIENT_ROOT_URL': 'http://www.showmetheposter.com',
-   'CLINET_LOCAL_URL': 'localhost'
+   'CLINET_LOCAL_URL': 'http://13.124.62.215'
 };
 
 /***/ }),

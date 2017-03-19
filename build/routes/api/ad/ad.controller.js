@@ -46,7 +46,7 @@ exports.inputData = function (req, res) {
 
   ad.expire = req.body.expired;
 
-  product.save(function (err) {
+  ad.save(function (err) {
     if (err) {
       console.error(err);
       res.json({ result: 0 });
