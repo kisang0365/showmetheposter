@@ -17,6 +17,8 @@ export default function (state = INITIAL_STATE, action) {
       return {...state, sortBy:action.sortBy, nowPage:1};
     case CHANGE_NOWPAGE:
       return {...state, nowPage:action.nowPage};
+    case CHANGE_OPTION:
+      return {...state, ads:action.ads, listPage : action.listPage};
     case CHANGE_PAGE:
       console.log("ACTION");
       return {INITIAL_STATE};
