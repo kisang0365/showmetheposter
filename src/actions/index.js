@@ -17,7 +17,7 @@ const API_LOCAL_URL = CLIENT_LOCAL_URL+'/api';
 export function changeOption(data) {
     return {
         type: types.CHANGE_OPTION,
-        products : data.products,
+        ads : data.ads,
         listPage : data.listPage
     };
 }
