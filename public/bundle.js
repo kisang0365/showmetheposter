@@ -5206,7 +5206,8 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 
 
 module.exports = {
-  'CLIENT_ROOT_URL': 'http://www.showmetheposter.com'
+   'CLIENT_ROOT_URL': 'http://www.showmetheposter.com',
+   'CLINET_LOCAL_URL': 'localhost'
 };
 
 /***/ }),
@@ -14397,7 +14398,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var CLIENT_ROOT_URL = _config2.default.CLIENT_ROOT_URL;
+var CLIENT_LOCAL_URL = _config2.default.CLINET_LOCAL_URL;
+
 var API_URL = CLIENT_ROOT_URL + '/api';
+var API_LOCAL_URL = CLIENT_LOCAL_URL + '/api';
 
 /**********************************
 *
@@ -14434,8 +14438,9 @@ function adInputData(_ref) {
 
     return function (dispatch) {
         var instance = _axios2.default.create({
-            baseURL: API_URL,
-            timeout: 2000
+            baseURL: API_LOCAL_URL,
+            timeout: 2000,
+            headers: { 'x-access-token': localStorage.getItem('token') }
         });
 
         instance.post('/ad/input', { name: name, url: url, picUrl: picUrl, inputTime: inputTime, expired: expired }).then(function (response) {

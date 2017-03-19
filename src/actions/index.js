@@ -4,8 +4,10 @@ import config from '../config';
 import * as types from './types';
 
 const CLIENT_ROOT_URL = config.CLIENT_ROOT_URL;
-const API_URL = CLIENT_ROOT_URL+'/api';
+const CLIENT_LOCAL_URL = config.CLINET_LOCAL_URL;
 
+const API_URL = CLIENT_ROOT_URL+'/api';
+const API_LOCAL_URL = CLIENT_LOCAL_URL+'/api';
 
 /**********************************
 *
@@ -38,9 +40,9 @@ export function changePage() {
 export function adInputData({name, url, picUrl, inputTime, expired}){
   return function (dispatch){
     var instance = axios.create({
-        baseURL: API_URL,
+        baseURL: API_LOCAL_URL,
         timeout: 2000,
-        headers: {'x-access-token': localStorage.getItem('token'), 'Access-Control-Allow-Origin': '*' }
+        headers: {'x-access-token': localStorage.getItem('token') }
     });
 
     instance.post(`/ad/input`, {name,url,picUrl, inputTime,expired })
