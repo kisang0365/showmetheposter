@@ -14411,7 +14411,7 @@ var API_LOCAL_URL = CLIENT_LOCAL_URL + '/api';
 function changeOption(data) {
     return {
         type: types.CHANGE_OPTION,
-        products: data.products,
+        ads: data.ads,
         listPage: data.listPage
     };
 }
@@ -24614,22 +24614,45 @@ var AdView = function (_React$Component) {
   function AdView(props) {
     _classCallCheck(this, AdView);
 
-    return _possibleConstructorReturn(this, (AdView.__proto__ || Object.getPrototypeOf(AdView)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (AdView.__proto__ || Object.getPrototypeOf(AdView)).call(this, props));
+
+    _this.refresh = _this.refresh.bind(_this);
+    _this.refresh();
+    return _this;
   }
 
   _createClass(AdView, [{
     key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps, prevState) {
 
-      if (this.props.sortBy != prevProps.sortBy || this.props.nowPage != prevProps.nowPage || this.props.scopeMin != prevProps.scopeMin || this.props.scopeMax != prevProps.scopeMax) {}
+      if (this.props.sortBy != prevProps.sortBy || this.props.nowPage != prevProps.nowPage) {
+        this.refresh();
+      }
+    }
+  }, {
+    key: 'refresh',
+    value: function refresh() {
+      var _this2 = this;
+
+      var _props = this.props,
+          sortBy = _props.sortBy,
+          nowPage = _props.nowPage,
+          listPage = _props.listPage,
+          ads = _props.ads;
+
+      var url = 'api/list/' + sortBy + '/' + nowPage;
+      _axios2.default.get(url).then(function (res) {
+        _this2.props.handleOnChange(res.data);
+        document.body.scrollTop = 0;
+      });
     }
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props,
-          nowPage = _props.nowPage,
-          listPage = _props.listPage,
-          ads = _props.ads;
+      var _props2 = this.props,
+          nowPage = _props2.nowPage,
+          listPage = _props2.listPage,
+          ads = _props2.ads;
 
 
       return _react2.default.createElement(
@@ -24657,8 +24680,6 @@ var mapStateToProps = function mapStateToProps(state) {
     sortBy: state.getList.sortBy, //recentu or recentd or priceu or priced
     nowPage: state.getList.nowPage,
     listPage: state.getList.listPage, //리스트 페이지 갯수
-    scopeMin: state.getList.scopeMin,
-    scopeMax: state.getList.scopeMax,
     ads: state.getList.ads
   };
 };
@@ -25667,17 +25688,10 @@ exports.default = function () {
       return _extends({}, state, { sortBy: action.sortBy, nowPage: 1 });
     case _types.CHANGE_NOWPAGE:
       return _extends({}, state, { nowPage: action.nowPage });
-    case _types.CHANGE_SCOPEMIN:
-      return _extends({}, state, { scopeMin: action.scopeMin, nowPage: 1 });
-    case _types.CHANGE_SCOPEMAX:
-      return _extends({}, state, { scopeMax: action.scopeMax, nowPage: 1 });
-    case _types.CHANGE_OPTION:
-      return _extends({}, state, { listPage: action.listPage, products: action.products });
     case _types.CHANGE_PAGE:
       console.log("ACTION");
       return { INITIAL_STATE: INITIAL_STATE };
   }
-
   return state;
 };
 
@@ -25687,8 +25701,6 @@ var INITIAL_STATE = {
   sortBy: "recentu", //recentu or recentd or priceu or priced
   nowPage: 1,
   listPage: 1, //리스트 페이지 갯수
-  scopeMin: 0,
-  scopeMax: 0,
   ads: []
 };
 

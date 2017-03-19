@@ -22,17 +22,15 @@ class AdView extends React.Component  {
   componentDidUpdate(prevProps, prevState){
 
     if( this.props.sortBy != prevProps.sortBy ||
-        this.props.nowPage != prevProps.nowPage ||
-        this.props.scopeMin != prevProps.scopeMin ||
-        this.props.scopeMax != prevProps.scopeMax ){
+        this.props.nowPage != prevProps.nowPage){
             this.refresh();
       }
     }
 
     refresh(){
-      const {sortBy, nowPage, listPage, scopeMin, scopeMax, ads} = this.props;
-
-      axios.get(`${config.CLIENT_ROOT_URL}/api/list/${sortBy}/${nowPage}/${scopeMin}-${scopeMax}`)
+      const {sortBy, nowPage, listPage, ads} = this.props;
+      var url = 'api/list/'+sortBy + '/' + nowPage;
+      axios.get(url)
         .then(res => {
           this.props.handleOnChange(res.data);
           document.body.scrollTop = 0;
@@ -61,8 +59,6 @@ const mapStateToProps = (state) =>{
     sortBy:state.getList.sortBy,    //recentu or recentd or priceu or priced
     nowPage:state.getList.nowPage,
     listPage:state.getList.listPage,  //리스트 페이지 갯수
-    scopeMin:state.getList.scopeMin,
-    scopeMax:state.getList.scopeMax,
     ads:state.getList.ads
   };
 };
