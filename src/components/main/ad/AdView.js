@@ -15,6 +15,8 @@ class AdView extends React.Component  {
 
   constructor(props) {
       super(props);
+      this.refresh = this.refresh.bind(this);
+      this.refresh();
     }
 
   componentDidUpdate(prevProps, prevState){
@@ -23,8 +25,18 @@ class AdView extends React.Component  {
         this.props.nowPage != prevProps.nowPage ||
         this.props.scopeMin != prevProps.scopeMin ||
         this.props.scopeMax != prevProps.scopeMax ){
-
+            this.refresh();
       }
+    }
+
+    refresh(){
+      const {sortBy, nowPage, listPage, scopeMin, scopeMax, ads} = this.props;
+
+      axios.get(`${config.CLIENT_ROOT_URL}/api/list/${sortBy}/${nowPage}/${scopeMin}-${scopeMax}`)
+        .then(res => {
+          this.props.handleOnChange(res.data);
+          document.body.scrollTop = 0;
+        });
     }
 
     render() {
