@@ -9,7 +9,7 @@ export default class MainNav extends React.Component  {
 
     render() {
         return(
-            <Navbar>
+           <Navbar fixedTop default collapseOnSelect>
               <Navbar.Header>
                 <Navbar.Brand>
                   <Link style={titleStyle} to="/">Zinobeen</Link>

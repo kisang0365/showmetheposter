@@ -35,7 +35,7 @@ export const largeImgSize = {
             <Carousel>
               <a style={bannerA} href="/advertise">
                 <Carousel.Item >
-                  <Image src="/assets/ad1.png"/>
+                  <Image src="/assets/ad1.png" responsive/>
                 </Carousel.Item>
               </a>
             </Carousel>
