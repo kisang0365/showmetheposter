@@ -24,7 +24,7 @@ export default class AdItem  extends React.Component  {
 
   mouseClick(){
     //  window.ga('send', 'itemClick', "this.state.item.name");
-      window.open( "www.showmetheposter.com"+"/temp/"+this.state.item._id,'_blank');
+      window.open( "/temp/"+this.state.item._id,'_blank');
   }
 
   mouseOver() {
