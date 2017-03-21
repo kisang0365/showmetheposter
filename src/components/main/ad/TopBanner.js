@@ -33,11 +33,24 @@ export const largeImgSize = {
   	      return(
 
             <Carousel>
-              <a style={bannerA} href="/advertise">
-                <Carousel.Item >
-                  <Image src="/assets/ad1.png" responsive/>
-                </Carousel.Item>
-              </a>
+            <a style={bannerA} href="/category">
+              <Carousel.Item >
+                <MediaQuery minDeviceWidth={1025}>
+                  <Image style={largeImgSize}  alt="900x500" src="/assets/ad1.png"/>
+                </MediaQuery>
+                <MediaQuery maxDeviceWidth={1224}>
+                  <MediaQuery maxDeviceWidth={500}>
+                    <Image style={smallImgSize}  alt="900x500" src="/assets/ad1.png"/>
+                  </MediaQuery>
+                  <MediaQuery minDeviceWidth={501}>
+                    <Image style={mediumImgSize}  alt="900x500" src="/assets/ad1.png"/>
+                  </MediaQuery>
+                </MediaQuery>
+                <Carousel.Caption>
+
+                </Carousel.Caption>
+              </Carousel.Item>
+            </a>
             </Carousel>
           );
 
