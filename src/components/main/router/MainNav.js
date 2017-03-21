@@ -21,10 +21,10 @@ export default class MainNav extends React.Component  {
                   <Navbar.Link style={linkColor} href="/advertise"> 경품 정보</Navbar.Link>
                 </Navbar.Text>
                 <Navbar.Text pullRight>
-                  <Navbar.Link style={linkColor} href="/partner"> 고객 문의</Navbar.Link>
+                  <Navbar.Link style={linkColor} href="/opinion"> 고객 문의</Navbar.Link>
                 </Navbar.Text>
                 <Navbar.Text pullRight>
-                  <Navbar.Link style={linkColor} href="/opinion"> 광고 문의</Navbar.Link>
+                  <Navbar.Link style={linkColor} href="/partner"> 광고 문의</Navbar.Link>
                 </Navbar.Text>
               </Navbar.Collapse>
             </Navbar>

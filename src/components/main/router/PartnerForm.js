@@ -55,7 +55,7 @@ export default class PartnerForm extends React.Component  {
     render() {
         return(
             	<div>
-            	  <PageHeader style={headerTextStyle}><small>제휴 문의</small></PageHeader>
+            	  <PageHeader style={headerTextStyle}><small>광고 문의 </small></PageHeader>
                       <Form horizontal name = "brandform" action="/api/mail/partnerSendMail" method="post" onSubmit = {this.register}>
                         <FormGroup controlId="formHorizontalBrand">
                           <Col componentClass={ControlLabel} xsOffset={2} smOffset={3} mdOffset={3} lgOffset={3} xs={2} sm={2} md={2} lg={2} style = {colTextStyle}>

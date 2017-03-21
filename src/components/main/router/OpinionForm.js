@@ -51,7 +51,7 @@ export default class OpinionForm extends React.Component  {
     render() {
         return(
             	<div>
-            	  <PageHeader style={headerTextStyle}><small>문의하기</small></PageHeader>
+            	  <PageHeader style={headerTextStyle}><small>고객 문의</small></PageHeader>
                       <Form horizontal action="/api/mail/opinionSendMail" method="post" onSubmit = {this.register}>
                         <FormGroup controlId="formHorizontalTitle">
                           <Col componentClass={ControlLabel} xsOffset={2} smOffset={3} mdOffset={3} lgOffset={3} xs={2} sm={2} md={2} lg={2} style = {colTextStyle}>
