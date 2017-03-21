@@ -24,7 +24,7 @@ export default class ProductItem  extends React.Component  {
 
   mouseClick(){
     //  window.ga('send', 'itemClick', "this.state.item.name");
-    //  window.open( config.CLIENT_ROOT_DOMAIN+"/temp/"+this.state.item._id,'_blank');
+      window.open( config.CLIENT_ROOT_DOMAIN+"/temp/"+this.state.item._id,'_blank');
   }
 
   mouseOver() {

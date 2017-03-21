@@ -33,7 +33,7 @@ export const largeImgSize = {
   	      return(
 
             <Carousel>
-            <a style={bannerA} href="/category">
+            <a style={bannerA} href="/advertise">
               <Carousel.Item >
                 <MediaQuery minDeviceWidth={1025}>
                   <Image style={largeImgSize}  alt="900x500" src="/assets/ad1.png"/>
