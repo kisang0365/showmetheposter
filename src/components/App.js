@@ -4,6 +4,7 @@ import NoMatch from './main/router/NoMatch';
 import { BrowserRouter, Match, Miss, Link } from 'react-router';
 import Router from 'react-router/BrowserRouter';
 import Home from './main/router/Home';
+import TempPage from './main/TempPage'
 import AdInput from './admin/AdInput'
 
 
