@@ -12,7 +12,7 @@ export default class MainNav extends React.Component  {
            <Navbar fixedTop default collapseOnSelect>
               <Navbar.Header>
                 <Navbar.Brand>
-                  <Link style={titleStyle} to="/">Zinobeen</Link>
+                  <Link style={titleStyle} to="/">Show me the Poster</Link>
                 </Navbar.Brand>
                 <Navbar.Toggle />
               </Navbar.Header>
