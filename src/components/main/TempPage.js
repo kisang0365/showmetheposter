@@ -4,21 +4,27 @@ import config from '../../config';
 import {PageHeader, Image} from 'react-bootstrap';
 import MediaQuery from 'react-responsive';
 
+export const colCentered = {
+  float: "none",
+  margin: "0 auto",
+  marginTop: "20px",
+  textAlign: "center",
+};
 
 export const smallImgSize = {
   width: "auto",
-  height: "300px",
+  height: "200px",
 
 };
 
 export const mediumImgSize = {
   width: "auto",
-  height: "500px",
+  height: "300px",
 };
 
 export const largeImgSize = {
   width: "auto",
-  height: "600px",
+  height: "400px",
 };
 
 
@@ -26,7 +32,7 @@ export const largeImgSize = {
 const TempPage = ({ params }) => {
 
   return (
-    <div>
+    <div style = {colCentered} >
       <MediaQuery minDeviceWidth={1025}>
         <Image style={largeImgSize}  alt="900x500" src="/assets/logo.png"/>
       </MediaQuery>
