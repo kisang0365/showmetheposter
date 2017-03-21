@@ -33,7 +33,7 @@ const TempPage = ({ params }) => {
 
   axios.get('/api/ad/'+params.id)
     .then(res => {
-        window.location.href= res.data.ad.url;
+        window.location.href = res.data.ad.url;
   });
 
   return (
