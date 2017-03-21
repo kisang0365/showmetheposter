@@ -6,7 +6,7 @@ export default class Home  extends React.Component  {
     render() {
 	      return(
           <div>
-            <TopBanner/>
+            <br/><TopBanner/><br/>
           </div>
         );
     }
