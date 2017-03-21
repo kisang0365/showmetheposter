@@ -31,7 +31,7 @@ export const largeImgSize = {
   export default class TopBanner extends React.Component  {
       render() {
   	      return(
-
+          <div>
             <Carousel>
               <a style={bannerA} href="/category">
                 <Carousel.Item >
@@ -52,8 +52,9 @@ export const largeImgSize = {
                   </Carousel.Caption>
                 </Carousel.Item>
               </a>
-              <br/><br/><br/>
             </Carousel>
+            <br/><br/><br/>
+            </div>
           );
 
       }
