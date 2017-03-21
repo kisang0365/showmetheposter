@@ -52,6 +52,7 @@ export const largeImgSize = {
               </Carousel.Item>
             </a>
             </Carousel>
+            <br/><br/><br/>
           );
 
       }

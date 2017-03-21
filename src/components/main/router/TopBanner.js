@@ -31,8 +31,8 @@ export const largeImgSize = {
   export default class TopBanner extends React.Component  {
       render() {
   	      return(
-            
-            <Carousel>                
+
+            <Carousel>
               <a style={bannerA} href="/category">
                 <Carousel.Item >
                   <MediaQuery minDeviceWidth={1025}>
@@ -52,6 +52,7 @@ export const largeImgSize = {
                   </Carousel.Caption>
                 </Carousel.Item>
               </a>
+              <br/><br/><br/>
             </Carousel>
           );
 
