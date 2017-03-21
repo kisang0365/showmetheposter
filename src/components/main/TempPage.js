@@ -31,6 +31,11 @@ export const largeImgSize = {
 
 const TempPage = ({ params }) => {
 
+  axios.get('/api/ad/'+params.id)
+    .then(res => {
+        window.location.href= res.data.ad.url;
+  });
+
   return (
     <div style = {colCentered} >
       <MediaQuery minDeviceWidth={1025}>
