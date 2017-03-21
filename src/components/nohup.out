@@ -1,0 +1,135 @@
+
+> showmetheposter@1.0.0 development /home/ubuntu/showmetheposter
+> NODE_ENV=development node ./build/main.js
+
+Server is running on development mode
+webpack-dev-server is listening on port 3001
+Http server listening on port 3000
+Connected to mongod server
+Hash: d130648c4cc5f7f9d906
+Version: webpack 2.2.1
+Time: 5717ms
+    Asset    Size  Chunks                    Chunk Names
+bundle.js  2.6 MB       0  [emitted]  [big]  main
+chunk    {0} bundle.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0} [built]
+   [14] (webpack)/buildin/module.js 517 bytes {0} [built]
+  [344] (webpack)/hot/emitter.js 77 bytes {0} [built]
+  [345] ./src/index.js 2.39 kB {0} [built]
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0} [built]
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0} [built]
+  [710] ./src/components/App.js 5.01 kB {0} [built]
+  [726] ./src/reducers/index.js 1.8 kB {0} [built]
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0} [built]
+  [842] ./~/strip-ansi/index.js 161 bytes {0} [built]
+  [849] ./~/url/url.js 23.3 kB {0} [built]
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0} [built]
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0} [built]
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0} [built]
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0} [built]
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m6.614 ms - -[0m
+[0mGET /bundle.js [32m200 [0m2.747 ms - 2222262[0m
+[0mGET /assets/ad1.png [36m304 [0m0.714 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m22.938 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.382 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m1.210 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [32m200 [0m1.337 ms - 427[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [32m200 [0m0.665 ms - 2222262[0m
+[0mGET / [32m200 [0m0.856 ms - 427[0m
+webpack: Compiling...
+Hash: 40a38149e25cb5833475
+Version: webpack 2.2.1
+Time: 963ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.d130648c4cc5f7f9d906.hot-update.js   3.47 kB       0  [emitted]         main
+d130648c4cc5f7f9d906.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.d130648c4cc5f7f9d906.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5.01 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /assets/event1.png [36m304 [0m1.120 ms - -[0m
+[0mGET /advertise [36m304 [0m1.475 ms - -[0m
+[0mGET /bundle.js [32m200 [0m1.181 ms - 2223748[0m
+[0mGET /assets/ad1.png [36m304 [0m0.459 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m16.331 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.554 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m0.758 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [36m304 [0m1.050 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [32m200 [0m1.047 ms - 2223748[0m
+[0mGET /assets/logo.png [32m200 [0m0.705 ms - 139714[0m
+webpack: Compiling...
+Hash: bcdfbcfe6f27adc5ff55
+Version: webpack 2.2.1
+Time: 608ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.40a38149e25cb5833475.hot-update.js   3.63 kB       0  [emitted]         main
+40a38149e25cb5833475.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.40a38149e25cb5833475.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5.01 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m1.160 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.888 ms - 2223914[0m
+[0mGET /assets/ad1.png [36m304 [0m0.451 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m6.519 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.499 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m0.573 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [36m304 [0m1.726 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [32m200 [0m0.860 ms - 2223914[0m
+[0mGET /assets/logo.png [36m304 [0m0.383 ms - -[0m
+Killed
+
+npm ERR! Linux 4.4.0-59-generic
+npm ERR! argv "/usr/bin/nodejs" "/usr/bin/npm" "run" "development"
+npm ERR! node v4.2.6
+npm ERR! npm  v3.5.2
+npm ERR! code ELIFECYCLE
+npm ERR! showmetheposter@1.0.0 development: `NODE_ENV=development node ./build/main.js`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the showmetheposter@1.0.0 development script 'NODE_ENV=development node ./build/main.js'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the showmetheposter package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     NODE_ENV=development node ./build/main.js
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs showmetheposter
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls showmetheposter
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/ubuntu/showmetheposter/src/components/npm-debug.log

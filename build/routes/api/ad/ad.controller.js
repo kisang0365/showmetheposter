@@ -12,7 +12,7 @@ exports.getList = function (req, res) {
 exports.getItem = function (req, res) {
   AdItem.findOne({ _id: req.params.id }, function (err, ad) {
     if (err) return res.status(500).send({ error: 'database failure' });
-    if (!product) return res.status(404).json({ error: 'item not found' });
+    if (!ad) return res.status(404).json({ error: 'item not found' });
 
     //조회수 처리 체크!!!!!!!!!
     ad.view = ad.view + 1;
@@ -44,6 +44,7 @@ exports.inputData = function (req, res) {
 
   ad.view = 0;
 
+  ad.inputTime = req.body.inputTime;
   ad.expire = req.body.expired;
 
   ad.save(function (err) {

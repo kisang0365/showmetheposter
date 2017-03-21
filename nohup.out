@@ -1,0 +1,1357 @@
+
+> showmetheposter@1.0.0 development /home/ubuntu/showmetheposter
+> NODE_ENV=development node ./build/main.js
+
+Server is running on development mode
+webpack-dev-server is listening on port 3001
+Http server listening on port 3000
+Connected to mongod server
+
+> showmetheposter@1.0.0 development /home/ubuntu/showmetheposter
+> NODE_ENV=development node ./build/main.js
+
+Server is running on development mode
+webpack-dev-server is listening on port 3001
+Http server listening on port 3000
+Connected to mongod server
+Hash: 84075af64d2cb7f92c30
+Version: webpack 2.2.1
+Time: 5726ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.59 MB       0  [emitted]  [big]  main
+chunk    {0} bundle.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0} [built]
+   [14] (webpack)/buildin/module.js 517 bytes {0} [built]
+  [344] (webpack)/hot/emitter.js 77 bytes {0} [built]
+  [345] ./src/index.js 2.39 kB {0} [built]
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0} [built]
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0} [built]
+  [710] ./src/components/App.js 4.79 kB {0} [built]
+  [725] ./src/reducers/index.js 1.8 kB {0} [built]
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0} [built]
+  [841] ./~/strip-ansi/index.js 161 bytes {0} [built]
+  [848] ./~/url/url.js 23.3 kB {0} [built]
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0} [built]
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0} [built]
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0} [built]
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0} [built]
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET /bundle.js [36m304 [0m10.412 ms - -[0m
+[0mGET / [36m304 [0m16.424 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m16.193 ms - -[0m
+[0mGET /advertise [36m304 [0m3.389 ms - -[0m
+[0mGET /advertise [36m304 [0m1.336 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.551 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.331 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m22.332 ms - -[0m
+webpack: Compiling...
+Hash: 68d2c455746808868d50
+Version: webpack 2.2.1
+Time: 1015ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js   2.59 MB       0  [emitted]  [big]  main
+0.84075af64d2cb7f92c30.hot-update.js   4.58 kB       0  [emitted]         main
+84075af64d2cb7f92c30.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.84075af64d2cb7f92c30.hot-update.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.79 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m1.300 ms - -[0m
+[0mGET /bundle.js [32m200 [0m2.351 ms - 2220029[0m
+[0mGET /assets/ad1.png [36m304 [0m0.569 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m5.661 ms - -[0m
+[0mGET /advertise [36m304 [0m0.640 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.195 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.256 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m14.068 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.779 ms - -[0m
+[0mGET / [32m200 [0m11.404 ms - 349[0m
+[0mGET /bundle.js [32m200 [0m0.824 ms - 2220029[0m
+[0mGET /assets/event1.png [32m200 [0m1.329 ms - 750941[0m
+[0mGET /advertise [32m200 [0m1.070 ms - 349[0m
+[0mGET /bundle.js [36m304 [0m0.379 ms - -[0m
+[0mGET /assets/ad1.png [32m200 [0m1.683 ms - 9235[0m
+[0mGET /api/list/recentu/1 [32m200 [0m3.035 ms - 1502[0m
+[0mGET /assets/event1.png [36m304 [0m0.367 ms - -[0m
+[0mGET /advertise [36m304 [0m0.616 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.353 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.923 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.277 ms - -[0m
+[0mGET /advertise [36m304 [0m0.772 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.218 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.389 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.231 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.420 ms - -[0m
+[0mGET / [36m304 [0m0.383 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.457 ms - 2220029[0m
+[0mGET /assets/event1.png [32m200 [0m0.578 ms - 750941[0m
+[0mGET / [36m304 [0m1.277 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.429 ms - 2220029[0m
+[0mGET /assets/event1.png [36m304 [0m0.415 ms - -[0m
+[0mGET /advertise [36m304 [0m0.603 ms - -[0m
+[0mGET /bundle.js [36m304 [0m1.101 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.403 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.297 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.487 ms - -[0m
+[0mGET /advertise [36m304 [0m0.984 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.217 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.513 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m5.196 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.505 ms - -[0m
+[0mGET /advertise [36m304 [0m0.616 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.269 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.359 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m6.017 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.561 ms - -[0m
+[0mGET /advertise [36m304 [0m0.587 ms - -[0m
+[0mGET /bundle.js [36m304 [0m1.509 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.486 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.099 ms - -[0m
+[0mGET /advertise [36m304 [0m0.664 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.226 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.557 ms - -[0m
+[0mGET /advertise [36m304 [0m0.702 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.213 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.289 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.462 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.372 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.450 ms - -[0m
+[0mGET / [32m200 [0m1.675 ms - 349[0m
+[0mGET /bundle.js [32m200 [0m0.666 ms - 2220029[0m
+[0mGET /bundle.js [32m200 [0m1.365 ms - 2220029[0m
+[0mGET /assets/event1.png [36m304 [0m0.404 ms - -[0m
+[0mGET /advertise [36m304 [0m1.470 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.792 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.255 ms - -[0m
+[0mGET /assets/ad1.png [32m200 [0m1.222 ms - 9235[0m
+[0mGET /assets/event1.png [36m304 [0m0.374 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.977 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.817 ms - -[0m
+[0mGET /robots.txt [33m404 [0m1.880 ms - 141[0m
+[0mGET / [32m200 [0m0.569 ms - 349[0m
+[0mGET /bundle.js [32m200 [0m0.546 ms - 2220029[0m
+[0mGET / [32m200 [0m0.633 ms - 349[0m
+webpack: Compiling...
+Hash: 316121b9b9f3e5c4dd48
+Version: webpack 2.2.1
+Time: 667ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js   2.59 MB       0  [emitted]  [big]  main
+0.68d2c455746808868d50.hot-update.js   5.35 kB       0  [emitted]         main
+68d2c455746808868d50.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.68d2c455746808868d50.hot-update.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.79 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET / [36m304 [0m1.079 ms - -[0m
+[0mGET /bundle.js [32m200 [0m1.453 ms - 2219974[0m
+[0mGET /assets/event1.png [36m304 [0m0.587 ms - -[0m
+[0mGET / [36m304 [0m0.407 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.463 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.355 ms - -[0m
+[0mGET / [36m304 [0m0.357 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.734 ms - 2219974[0m
+[0mGET /assets/event1.png [36m304 [0m0.526 ms - -[0m
+[0mGET /advertise [36m304 [0m0.886 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.333 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.508 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m8.297 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.423 ms - -[0m
+[0mGET / [32m200 [0m1.900 ms - -[0m
+[0mGET / [32m200 [0m0.819 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.721 ms - -[0m
+[0mGET /bundle.js [32m200 [0m1.375 ms - 2219974[0m
+[0mGET / [32m200 [0m0.541 ms - 427[0m
+[0mGET /bundle.js [32m200 [0m0.374 ms - 2219974[0m
+[0mGET /assets/event1.png [36m304 [0m0.425 ms - -[0m
+[0mGET /advertise [32m200 [0m1.033 ms - 427[0m
+[0mGET /bundle.js [36m304 [0m0.361 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.330 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m7.943 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.409 ms - -[0m
+[0mGET / [32m200 [0m0.559 ms - 427[0m
+[0mGET /assets/event1.png [36m304 [0m0.311 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.348 ms - 2219974[0m
+[0mGET /bundle.js [32m200 [0m1.471 ms - 2219974[0m
+[0mGET /assets/event1.png [36m304 [0m0.370 ms - -[0m
+[0mGET /advertise [36m304 [0m1.283 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.635 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.353 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.366 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.028 ms - -[0m
+[0mGET /advertise [32m200 [0m0.899 ms - 427[0m
+[0mGET /assets/ad1.png [36m304 [0m0.250 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.251 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.477 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.369 ms - -[0m
+[0mGET / [36m304 [0m0.399 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.280 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.359 ms - -[0m
+[0mGET /advertise [36m304 [0m1.190 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.313 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.420 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m4.304 ms - -[0m
+webpack: Compiling...
+Hash: 4d355cb15eced1022f9b
+Version: webpack 2.2.1
+Time: 618ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js   2.59 MB       0  [emitted]  [big]  main
+0.316121b9b9f3e5c4dd48.hot-update.js   9.98 kB       0  [emitted]         main
+316121b9b9f3e5c4dd48.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.316121b9b9f3e5c4dd48.hot-update.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.79 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET /assets/ad1.png [36m304 [0m0.831 ms - -[0m
+[0mGET /advertise [32m200 [0m11.271 ms - 427[0m
+[0mGET /api/list/recentu/1 [36m304 [0m5.014 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.633 ms - 2220047[0m
+[0mGET /assets/ad1.png [36m304 [0m0.355 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.946 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.399 ms - -[0m
+[0mGET /advertise [36m304 [0m0.602 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.235 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.351 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.507 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.372 ms - -[0m
+webpack: Compiling...
+Hash: bc7125b6231c31d3b257
+Version: webpack 2.2.1
+Time: 477ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.4d355cb15eced1022f9b.hot-update.js   5.54 kB       0  [emitted]         main
+4d355cb15eced1022f9b.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.4d355cb15eced1022f9b.hot-update.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.79 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET /assets/event1.png [36m304 [0m0.501 ms - -[0m
+[0mGET /advertise [36m304 [0m0.756 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.652 ms - 2220987[0m
+[0mGET /assets/ad1.png [36m304 [0m0.431 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m7.182 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.615 ms - -[0m
+[0mGET /advertise [36m304 [0m1.091 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.209 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.521 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.021 ms - -[0m
+[0mGET /advertise [36m304 [0m0.530 ms - -[0m
+[0mGET /bundle.js [32m200 [0m1.026 ms - 2220987[0m
+[0mGET /assets/ad1.png [36m304 [0m2.368 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.003 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.354 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.516 ms - -[0m
+[0mGET /advertise [36m304 [0m0.773 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.206 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.597 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.045 ms - -[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m0.594 ms - 163[0m
+[0mGET /apple-touch-icon.png [33m404 [0m1.023 ms - 151[0m
+[0mGET /assets/event1.png [36m304 [0m0.363 ms - -[0m
+[0mGET /advertise [36m304 [0m0.615 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.378 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.518 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m6.310 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.580 ms - -[0m
+[0mGET /advertise [36m304 [0m0.557 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.317 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.374 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.355 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m1.769 ms - -[0m
+[0mGET /category [33m404 [0m0.466 ms - 139[0m
+[0mGET /advertise [36m304 [0m0.705 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.344 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.382 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.548 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.362 ms - -[0m
+[0mGET /advertise [36m304 [0m0.518 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.497 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.355 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m4.415 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.455 ms - 154[0m
+[0mGET /advertise [36m304 [0m0.522 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.282 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.598 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.950 ms - -[0m
+webpack: Compiling...
+Hash: 5a3254b370269b79114b
+Version: webpack 2.2.1
+Time: 482ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.bc7125b6231c31d3b257.hot-update.js   5.41 kB       0  [emitted]         main
+bc7125b6231c31d3b257.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.bc7125b6231c31d3b257.hot-update.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.79 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m0.920 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.400 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.500 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.828 ms - -[0m
+[0mGET /advertise [36m304 [0m0.608 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.884 ms - 2220997[0m
+[0mGET /assets/ad1.png [36m304 [0m2.734 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.956 ms - -[0m
+[0mGET /advertise [36m304 [0m0.724 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.211 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m1.848 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m5.726 ms - -[0m
+[0mGET /advertise [36m304 [0m0.762 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.199 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.321 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.468 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.367 ms - -[0m
+[0mGET /advertise [36m304 [0m0.765 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.357 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.386 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.192 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.334 ms - -[0m
+[0mGET /advertise [36m304 [0m0.718 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.228 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.508 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.744 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.501 ms - -[0m
+[0mGET /advertise [36m304 [0m0.537 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.216 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.364 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.783 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.470 ms - -[0m
+[0mGET /advertise [36m304 [0m0.559 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.217 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.577 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.761 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m1.276 ms - -[0m
+[0mGET /advertise [36m304 [0m1.141 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.307 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.399 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m6.096 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.528 ms - -[0m
+[0mGET /advertise [36m304 [0m1.789 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.219 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.345 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.613 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.383 ms - -[0m
+[0mGET /advertise [36m304 [0m0.533 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.234 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.476 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.787 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.470 ms - -[0m
+[0mGET /advertise [36m304 [0m0.550 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.360 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.525 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.677 ms - -[0m
+[0mGET /advertise [36m304 [0m0.538 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.236 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.656 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.308 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.285 ms - 154[0m
+[0mGET /category [33m404 [0m0.538 ms - 139[0m
+[0mGET /category [33m404 [0m4.267 ms - 139[0m
+[0mGET /advertise [36m304 [0m0.581 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.235 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.367 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m4.952 ms - -[0m
+[0mGET / [32m200 [0m1.407 ms - 427[0m
+[0mGET /assets/event1.png [36m304 [0m4.630 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.498 ms - 2220997[0m
+[0mGET /bundle.js [32m200 [0m0.702 ms - 2220997[0m
+[0mGET /assets/event1.png [36m304 [0m2.214 ms - -[0m
+[0mGET /advertise [36m304 [0m0.644 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.343 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.402 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.509 ms - -[0m
+[0mGET / [32m200 [0m0.655 ms - 427[0m
+webpack: Compiling...
+Hash: 20807282e235a3915aa5
+Version: webpack 2.2.1
+Time: 498ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.5a3254b370269b79114b.hot-update.js   1.49 kB       0  [emitted]         main
+5a3254b370269b79114b.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.5a3254b370269b79114b.hot-update.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.79 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m1.048 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.525 ms - 2221056[0m
+[0mGET /assets/ad1.png [36m304 [0m0.748 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.936 ms - -[0m
+[0mGET /advertise [36m304 [0m0.733 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.191 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.498 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.594 ms - -[0m
+[0mGET /advertise [36m304 [0m0.765 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.203 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.379 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.644 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.587 ms - 154[0m
+webpack: Compiling...
+Hash: 43d3e36f673aac72cb39
+Version: webpack 2.2.1
+Time: 849ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.20807282e235a3915aa5.hot-update.js   16.5 kB       0  [emitted]         main
+20807282e235a3915aa5.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.20807282e235a3915aa5.hot-update.js (main) 2.1 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.9 kB {0} [built]
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [851] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [852] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [854] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 841 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m0.746 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.690 ms - 2221175[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.611 ms - 154[0m
+webpack: Compiling...
+Hash: 88329daf8257a736298e
+Version: webpack 2.2.1
+Time: 653ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.43d3e36f673aac72cb39.hot-update.js   7.08 kB       0  [emitted]         main
+43d3e36f673aac72cb39.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.43d3e36f673aac72cb39.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m0.771 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.612 ms - 2222158[0m
+[0mGET /assets/ad1.png [36m304 [0m0.396 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.685 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.381 ms - 154[0m
+[0mGET /undefined/temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.557 ms - 170[0m
+[0mGET / [32m200 [0m1.114 ms - 427[0m
+[0mGET / [32m200 [0m0.571 ms - 427[0m
+[0mGET /robots.txt [33m404 [0m0.439 ms - 141[0m
+[0mGET / [32m200 [0m0.623 ms - 427[0m
+[0mGET /bundle.js [32m200 [0m0.549 ms - 2222158[0m
+webpack: Compiling...
+Hash: 88329daf8257a736298e
+Version: webpack 2.2.1
+Time: 189ms
+    Asset    Size  Chunks         Chunk Names
+bundle.js  2.6 MB       0  [big]  main
+chunk    {0} bundle.js (main) 2.11 MB [entry]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m0.803 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.590 ms - 2222158[0m
+[0mGET /assets/ad1.png [36m304 [0m0.431 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.406 ms - -[0m
+[0mGET /advertise [36m304 [0m0.829 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.211 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.341 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.749 ms - -[0m
+[0mGET /advertise [36m304 [0m0.577 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.332 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m1.971 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.229 ms - -[0m
+[0mGET /undefined/temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.519 ms - 170[0m
+webpack: Compiling...
+Hash: 68060892b752cf56a57a
+Version: webpack 2.2.1
+Time: 324ms
+                               Asset       Size  Chunks  Chunk Names
+                           bundle.js     2.6 MB       0  main
+0.88329daf8257a736298e.hot-update.js  384 bytes       0  main
+88329daf8257a736298e.hot-update.json   43 bytes          
+chunk    {0} bundle.js, 0.88329daf8257a736298e.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+
+ERROR in ./src/config.js
+Module build failed: SyntaxError: Unexpected token (2:64)
+
+  1 |  export const CLIENT_ROOT_URL = 'http://13.124.62.215',	
+> 2 |     	      CLINET_ROOT_DOMAIN : 'http://www.showmetheposter.com';
+    |     	                                                           ^
+  3 | 
+
+ @ ./src/components/main/router/NoMatch.js 18:14-40
+ @ ./src/components/App.js
+ @ ./src/index.js
+ @ multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server
+webpack: Failed to compile.
+webpack: Compiling...
+Hash: fce61437a4f1478c329f
+Version: webpack 2.2.1
+Time: 728ms
+                               Asset      Size  Chunks  Chunk Names
+                           bundle.js    2.6 MB       0  main
+0.88329daf8257a736298e.hot-update.js   17.3 kB       0  main
+88329daf8257a736298e.hot-update.json  43 bytes          
+chunk    {0} bundle.js, 0.88329daf8257a736298e.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+
+ERROR in ./src/config.js
+Module build failed: SyntaxError: Unexpected token (2:64)
+
+  1 |  export const CLIENT_ROOT_URL = 'http://13.124.62.215',	
+> 2 |     	      CLINET_ROOT_DOMAIN : 'http://www.showmetheposter.com';
+    |     	                                                           ^
+  3 | 
+
+ @ ./src/components/main/router/NoMatch.js 18:14-40
+ @ ./src/components/App.js
+ @ ./src/index.js
+ @ multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server
+webpack: Failed to compile.
+webpack: Compiling...
+Hash: 217ec9435daa7a233bad
+Version: webpack 2.2.1
+Time: 483ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.88329daf8257a736298e.hot-update.js   18.5 kB       0  [emitted]         main
+88329daf8257a736298e.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.88329daf8257a736298e.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m1.197 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.485 ms - 2222451[0m
+[0mGET /assets/ad1.png [36m304 [0m0.372 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.331 ms - -[0m
+[0mGET /undefined/temp/58ceb657b4a7e254f74c3d29 [33m404 [0m0.556 ms - 170[0m
+[0mGET /undefined/temp/58ceb657b4a7e254f74c3d29 [33m404 [0m0.458 ms - 170[0m
+webpack: Compiling...
+Hash: 6171bd7971fca1235e92
+Version: webpack 2.2.1
+Time: 544ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.217ec9435daa7a233bad.hot-update.js    6.3 kB       0  [emitted]         main
+217ec9435daa7a233bad.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.217ec9435daa7a233bad.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m0.858 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.542 ms - 2222398[0m
+[0mGET /assets/ad1.png [36m304 [0m0.386 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.188 ms - -[0m
+[0mGET /showmetheposter/temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.442 ms - 176[0m
+webpack: Compiling...
+Hash: 6171bd7971fca1235e92
+Version: webpack 2.2.1
+Time: 202ms
+    Asset    Size  Chunks         Chunk Names
+bundle.js  2.6 MB       0  [big]  main
+chunk    {0} bundle.js (main) 2.11 MB [entry]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m0.733 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.554 ms - 2222406[0m
+[0mGET /assets/ad1.png [36m304 [0m0.405 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.692 ms - -[0m
+[0mGET /www.showmetheposter.com/temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.572 ms - 184[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.436 ms - 160[0m
+[0mGET /favicon.ico [33m404 [0m0.501 ms - 142[0m
+webpack: Compiling...
+Hash: d698565806f446dbc7f0
+Version: webpack 2.2.1
+Time: 638ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.6171bd7971fca1235e92.hot-update.js   6.29 kB       0  [emitted]         main
+6171bd7971fca1235e92.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.6171bd7971fca1235e92.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m1.173 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.615 ms - 2222378[0m
+[0mGET /assets/ad1.png [36m304 [0m0.436 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.250 ms - -[0m
+[0mGET /temp/58ceb657b4a7e254f74c3d29 [33m404 [0m0.581 ms - 160[0m
+[0mGET /assets/event1.png [36m304 [0m0.385 ms - -[0m
+[0mGET / [32m200 [0m1.510 ms - 427[0m
+[0mGET /bundle.js [36m304 [0m0.303 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.385 ms - -[0m
+[0mGET /advertise [36m304 [0m6.938 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.230 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.342 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m2.362 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.508 ms - 160[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.432 ms - 160[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.455 ms - 160[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.469 ms - 160[0m
+webpack: Compiling...
+Hash: 777d8d376e8f6617db12
+Version: webpack 2.2.1
+Time: 606ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.d698565806f446dbc7f0.hot-update.js   4.89 kB       0  [emitted]         main
+d698565806f446dbc7f0.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.d698565806f446dbc7f0.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+   [15] ./~/react-dom/lib/ReactMount.js 25.5 kB {0}
+   [18] ./~/react-hot-api/modules/index.js 57 bytes {0}
+   [19] ./~/react-hot-loader/RootInstanceProvider.js 1.18 kB {0}
+   [20] ./~/react-hot-loader/makeExportsHot.js 1.73 kB {0}
+   [29] ./~/react-dom/index.js 59 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [725] ./src/reducers/index.js 1.8 kB {0}
+  [808] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [841] ./~/strip-ansi/index.js 161 bytes {0}
+  [848] ./~/url/url.js 23.3 kB {0}
+  [855] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.722 ms - 160[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [33m404 [0m0.422 ms - 160[0m
+[0mGET / [32m200 [0m1.497 ms - 427[0m
+[0mGET /temp/9012381293012 [33m404 [0m0.804 ms - 149[0m
+[0mGET /temp/218390214 [33m404 [0m0.421 ms - 145[0m
+[0mGET /advertise [36m304 [0m0.666 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.850 ms - 2222260[0m
+[0mGET /assets/ad1.png [36m304 [0m0.546 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m4.049 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.345 ms - 154[0m
+[0mGET /temp [33m404 [0m0.595 ms - 135[0m
+[0mGET /temp [33m404 [0m0.459 ms - 135[0m
+[0mGET /temp [33m404 [0m0.465 ms - 135[0m
+[0mGET /temp [33m404 [0m0.522 ms - 135[0m
+[0mGET /temp [33m404 [0m0.475 ms - 135[0m
+[0mGET /temp [33m404 [0m0.428 ms - 135[0m
+[0mGET /temp [33m404 [0m0.450 ms - 135[0m
+[0mGET / [36m304 [0m0.476 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.598 ms - 2222260[0m
+[0mGET /assets/event1.png [36m304 [0m0.407 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.407 ms - 154[0m
+[0mGET / [36m304 [0m0.498 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.380 ms - -[0m
+[0mGET /assets/event1.png [36m304 [0m0.485 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.413 ms - 154[0m
+
+> showmetheposter@1.0.0 development /home/ubuntu/showmetheposter
+> NODE_ENV=development node ./build/main.js
+
+Server is running on development mode
+webpack-dev-server is listening on port 3001
+Http server listening on port 3000
+Connected to mongod server
+Hash: 0be2fcdfba7be902d873
+Version: webpack 2.2.1
+Time: 5715ms
+    Asset    Size  Chunks                    Chunk Names
+bundle.js  2.6 MB       0  [emitted]  [big]  main
+chunk    {0} bundle.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0} [built]
+   [14] (webpack)/buildin/module.js 517 bytes {0} [built]
+  [344] (webpack)/hot/emitter.js 77 bytes {0} [built]
+  [345] ./src/index.js 2.39 kB {0} [built]
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0} [built]
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0} [built]
+  [710] ./src/components/App.js 5.01 kB {0} [built]
+  [726] ./src/reducers/index.js 1.8 kB {0} [built]
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0} [built]
+  [842] ./~/strip-ansi/index.js 161 bytes {0} [built]
+  [849] ./~/url/url.js 23.3 kB {0} [built]
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0} [built]
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0} [built]
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0} [built]
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0} [built]
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET / [36m304 [0m7.845 ms - -[0m
+[0mGET /bundle.js [32m200 [0m270.257 ms - 2222378[0m
+[0mGET /assets/event1.png [36m304 [0m0.948 ms - -[0m
+[0mGET /advertise [32m200 [0m3.879 ms - 427[0m
+[0mGET /bundle.js [36m304 [0m0.567 ms - -[0m
+[0mGET /assets/ad1.png [32m200 [0m1.365 ms - 9235[0m
+[0mGET /api/list/recentu/1 [36m304 [0m23.417 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [32m200 [0m1.069 ms - 427[0m
+[0mGET /temp/bundle.js [32m200 [0m0.843 ms - 427[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.696 ms - 154[0m
+[0mGET /temp/58ceb6a3b4a7e254f74c3d2c [32m200 [0m0.924 ms - 427[0m
+[0mGET /temp/bundle.js [36m304 [0m0.553 ms - -[0m
+[0mGET /advertise [36m304 [0m0.575 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.344 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.388 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m4.578 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.581 ms - 154[0m
+[0mGET /advertise [36m304 [0m0.617 ms - -[0m
+[0mGET /bundle.js [36m304 [0m1.537 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.961 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.335 ms - 154[0m
+[0mGET /api/list/recentu/1 [36m304 [0m17.204 ms - -[0m
+[0mGET /temp/58ceb6a3b4a7e254f74c3d2c [36m304 [0m0.570 ms - -[0m
+[0mGET /temp/bundle.js [36m304 [0m1.391 ms - -[0m
+webpack: Compiling...
+Hash: ee67a95b71b4200e434f
+Version: webpack 2.2.1
+Time: 915ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.0be2fcdfba7be902d873.hot-update.js   1.98 kB       0  [emitted]         main
+0be2fcdfba7be902d873.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.0be2fcdfba7be902d873.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5.01 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /assets/event1.png [36m304 [0m0.883 ms - -[0m
+[0mGET /advertise [36m304 [0m1.015 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.977 ms - 2222262[0m
+[0mGET /assets/ad1.png [36m304 [0m0.461 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m13.589 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.796 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m304 [0m0.647 ms - -[0m
+[0mGET /temp/bundle.js [36m304 [0m0.541 ms - -[0m
+[0mGET /temp/bundle.js [32m200 [0m1.327 ms - 427[0m
+[0mGET /temp/bundle.js [36m304 [0m0.409 ms - -[0m
+webpack: Compiling...
+Hash: a0258aba7f24d96a7109
+Version: webpack 2.2.1
+Time: 723ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.ee67a95b71b4200e434f.hot-update.js      5 kB       0  [emitted]         main
+ee67a95b71b4200e434f.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.ee67a95b71b4200e434f.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5 kB {0} [built]
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [32m200 [0m1.904 ms - 427[0m
+[0mGET /bundle.js [32m200 [0m1.000 ms - 2222258[0m
+[0mGET /assets/ad1.png [36m304 [0m0.578 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m6.025 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.540 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [32m200 [0m1.592 ms - 427[0m
+[0mGET /temp/bundle.js [32m200 [0m0.821 ms - 427[0m
+
+> showmetheposter@1.0.0 development /home/ubuntu/showmetheposter
+> NODE_ENV=development node ./build/main.js
+
+Server is running on development mode
+webpack-dev-server is listening on port 3001
+Http server listening on port 3000
+Connected to mongod server
+[0mGET /advertise [36m304 [0m72.481 ms - -[0m
+[0mGET /bundle.js [32m200 [0m104.611 ms - 2224033[0m
+Hash: 61edc7f66563bda19425
+Version: webpack 2.2.1
+Time: 5808ms
+    Asset    Size  Chunks                    Chunk Names
+bundle.js  2.6 MB       0  [emitted]  [big]  main
+chunk    {0} bundle.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0} [built]
+   [14] (webpack)/buildin/module.js 517 bytes {0} [built]
+  [344] (webpack)/hot/emitter.js 77 bytes {0} [built]
+  [345] ./src/index.js 2.39 kB {0} [built]
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0} [built]
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0} [built]
+  [710] ./src/components/App.js 5.01 kB {0} [built]
+  [726] ./src/reducers/index.js 1.8 kB {0} [built]
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0} [built]
+  [842] ./~/strip-ansi/index.js 161 bytes {0} [built]
+  [849] ./~/url/url.js 23.3 kB {0} [built]
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0} [built]
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0} [built]
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0} [built]
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0} [built]
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /assets/ad1.png [36m304 [0m78.363 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m11.273 ms - 154[0m
+[0mGET /api/list/recentu/1 [36m304 [0m33.567 ms - -[0m
+[0mGET /advertise [36m304 [0m9.953 ms - -[0m
+[0mGET /bundle.js [36m304 [0m7.891 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.577 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m6.030 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.496 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m1.272 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [36m304 [0m0.712 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [32m200 [0m1.266 ms - 2224033[0m
+[0mGET /assets/logo.png [36m304 [0m0.406 ms - -[0m
+[0mGET /api/ad/58ceb6a0b4a7e254f74c3d2a [32m200 [0m14.242 ms - 216[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/www.naver.com [33m404 [0m0.660 ms - 174[0m
+webpack: Compiling...
+Hash: 6774d7588c59e5357925
+Version: webpack 2.2.1
+Time: 1010ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.61edc7f66563bda19425.hot-update.js   3.75 kB       0  [emitted]         main
+61edc7f66563bda19425.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.61edc7f66563bda19425.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5.01 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m2.191 ms - -[0m
+[0mGET /bundle.js [32m200 [0m1.018 ms - 2224028[0m
+[0mGET /assets/ad1.png [36m304 [0m0.560 ms - -[0m
+[0mGET /api/list/recentu/1 [32m200 [0m6.682 ms - 1502[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.530 ms - 154[0m
+[0mGET /advertise [36m304 [0m0.733 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.297 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.410 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m11.306 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m6.801 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m0.769 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [36m304 [0m0.947 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [32m200 [0m0.821 ms - 2224028[0m
+[0mGET /assets/logo.png [36m304 [0m0.515 ms - -[0m
+[0mGET /api/ad/58ceb6a0b4a7e254f74c3d2a [32m200 [0m15.656 ms - 216[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/www.naver.com [33m404 [0m0.512 ms - 174[0m
+webpack: Compiling...
+Hash: d2a83bcc1fd80ab320d1
+Version: webpack 2.2.1
+Time: 629ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.6774d7588c59e5357925.hot-update.js   3.75 kB       0  [emitted]         main
+6774d7588c59e5357925.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.6774d7588c59e5357925.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5.01 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /assets/event1.png [36m304 [0m0.917 ms - -[0m
+[0mGET /advertise [36m304 [0m1.088 ms - -[0m
+[0mGET /bundle.js [32m200 [0m1.340 ms - 2224033[0m
+[0mGET /assets/ad1.png [36m304 [0m0.528 ms - -[0m
+[0mGET /api/list/recentu/1 [32m200 [0m5.447 ms - 1502[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.033 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m0.609 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [36m304 [0m0.685 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [32m200 [0m0.843 ms - 2224033[0m
+[0mGET /assets/logo.png [36m304 [0m0.508 ms - -[0m
+[0mGET /api/ad/58ceb6a0b4a7e254f74c3d2a [32m200 [0m3.946 ms - 216[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/www.naver.com [33m404 [0m0.619 ms - 174[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m0.707 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [36m304 [0m0.513 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [36m304 [0m0.494 ms - -[0m
+[0mGET /assets/logo.png [36m304 [0m0.378 ms - -[0m
+[0mGET /api/ad/58ceb6a0b4a7e254f74c3d2a [32m200 [0m7.559 ms - 216[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/www.naver.com [33m404 [0m0.580 ms - 174[0m
+[0mGET /advertise [36m304 [0m0.537 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.444 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.736 ms - -[0m
+[0mGET /api/list/recentu/1 [32m200 [0m6.814 ms - 1502[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.419 ms - 154[0m
+[0mGET /assets/event1.png [36m304 [0m0.371 ms - -[0m
+[0mGET /advertise [36m304 [0m0.601 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.378 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.451 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.543 ms - 154[0m
+[0mGET /api/list/recentu/1 [36m304 [0m7.083 ms - -[0m
+webpack: Compiling...
+Hash: 070966cb561327f319b0
+Version: webpack 2.2.1
+Time: 577ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.d2a83bcc1fd80ab320d1.hot-update.js   3.75 kB       0  [emitted]         main
+d2a83bcc1fd80ab320d1.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.d2a83bcc1fd80ab320d1.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5.01 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m0.915 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.836 ms - 2224036[0m
+[0mGET /assets/ad1.png [36m304 [0m0.545 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m6.555 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.496 ms - 154[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a [36m301 [0m1.481 ms - 217[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/ [36m304 [0m0.576 ms - -[0m
+[0mGET /temp/58ceb6a0b4a7e254f74c3d2a/bundle.js [32m200 [0m0.840 ms - 2224036[0m
+[0mGET /assets/logo.png [36m304 [0m0.367 ms - -[0m
+[0mGET /api/ad/58ceb6a0b4a7e254f74c3d2a [32m200 [0m3.805 ms - 216[0m
+webpack: Compiling...
+Hash: ad5825cc47724689f711
+Version: webpack 2.2.1
+Time: 313ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.070966cb561327f319b0.hot-update.js   3.75 kB       0  [emitted]         main
+070966cb561327f319b0.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.070966cb561327f319b0.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 5.01 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /assets/event1.png [36m304 [0m0.489 ms - -[0m
+[0mGET /advertise [36m304 [0m1.188 ms - -[0m
+[0mGET /bundle.js [32m200 [0m2.227 ms - 2224033[0m
+[0mGET /assets/ad1.png [36m304 [0m0.408 ms - -[0m
+[0mGET /api/list/recentu/1 [32m200 [0m4.174 ms - 1502[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.827 ms - 154[0m
+[0mGET /advertise [36m304 [0m0.584 ms - -[0m
+[0mGET /bundle.js [36m304 [0m0.380 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.674 ms - -[0m
+[0mGET /api/list/recentu/1 [36m304 [0m3.676 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.636 ms - 154[0m
+[0mGET /assets/event1.png [36m304 [0m0.376 ms - -[0m
+[0mGET /advertise [36m304 [0m0.584 ms - -[0m
+[0mGET /bundle.js [36m304 [0m1.002 ms - -[0m
+[0mGET /assets/ad1.png [36m304 [0m0.387 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m1.589 ms - 154[0m
+[0mGET /api/list/recentu/1 [36m304 [0m4.481 ms - -[0m
+webpack: Compiling...
+Hash: cc31cc85c5813d68d164
+Version: webpack 2.2.1
+Time: 554ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.ad5825cc47724689f711.hot-update.js   4.93 kB       0  [emitted]         main
+ad5825cc47724689f711.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.ad5825cc47724689f711.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.92 kB {0} [built]
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET /advertise [36m304 [0m1.018 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.872 ms - 2223954[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.836 ms - 154[0m
+[0mGET / [32m200 [0m1.413 ms - 427[0m
+[0mGET /bundle.js [36m304 [0m1.885 ms - -[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.538 ms - 154[0m
+webpack: Compiling...
+Hash: cc31cc85c5813d68d164
+Version: webpack 2.2.1
+Time: 352ms
+    Asset    Size  Chunks         Chunk Names
+bundle.js  2.6 MB       0  [big]  main
+chunk    {0} bundle.js (main) 2.11 MB [entry]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.92 kB {0} [built]
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET / [32m200 [0m1.206 ms - 427[0m
+[0mGET /bundle.js [32m200 [0m0.546 ms - 2223954[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.687 ms - 154[0m
+webpack: Compiling...
+Hash: b8bfeaa27cf0396ba3c0
+Version: webpack 2.2.1
+Time: 498ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.cc31cc85c5813d68d164.hot-update.js   4.89 kB       0  [emitted]         main
+cc31cc85c5813d68d164.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.cc31cc85c5813d68d164.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.88 kB {0} [built]
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET / [36m304 [0m1.078 ms - -[0m
+[0mGET /bundle.js [32m200 [0m1.013 ms - 2223918[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.852 ms - 154[0m
+webpack: Compiling...
+Hash: 24646dcab4c190b02922
+Version: webpack 2.2.1
+Time: 572ms
+                               Asset      Size  Chunks                    Chunk Names
+                           bundle.js    2.6 MB       0  [emitted]  [big]  main
+0.b8bfeaa27cf0396ba3c0.hot-update.js   4.74 kB       0  [emitted]         main
+b8bfeaa27cf0396ba3c0.hot-update.json  43 bytes          [emitted]         
+chunk    {0} bundle.js, 0.b8bfeaa27cf0396ba3c0.hot-update.js (main) 2.11 MB [entry] [rendered]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.88 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+[0mGET / [36m304 [0m0.947 ms - -[0m
+[0mGET /bundle.js [32m200 [0m0.736 ms - 2223803[0m
+[0mGET /react-responsive.js.map [33m404 [0m0.720 ms - 154[0m
+webpack: Compiling...
+Hash: 24646dcab4c190b02922
+Version: webpack 2.2.1
+Time: 223ms
+    Asset    Size  Chunks         Chunk Names
+bundle.js  2.6 MB       0  [big]  main
+chunk    {0} bundle.js (main) 2.11 MB [entry]
+    [0] ./~/react/react.js 56 bytes {0}
+   [14] (webpack)/buildin/module.js 517 bytes {0}
+  [344] (webpack)/hot/emitter.js 77 bytes {0}
+  [345] ./src/index.js 2.39 kB {0}
+  [346] (webpack)-dev-server/client?http://0.0.0.0:3001 5.28 kB {0}
+  [347] (webpack)/hot/only-dev-server.js 2.29 kB {0}
+  [710] ./src/components/App.js 4.88 kB {0}
+  [726] ./src/reducers/index.js 1.8 kB {0}
+  [809] ./~/redux-thunk/lib/index.js 529 bytes {0}
+  [842] ./~/strip-ansi/index.js 161 bytes {0}
+  [849] ./~/url/url.js 23.3 kB {0}
+  [852] (webpack)-dev-server/client/overlay.js 3.6 kB {0}
+  [853] (webpack)-dev-server/client/socket.js 856 bytes {0}
+  [855] (webpack)/hot/log-apply-result.js 1.02 kB {0}
+  [856] multi ./src/index.js webpack-dev-server/client?http://0.0.0.0:3001 webpack/hot/only-dev-server 52 bytes {0}
+     + 842 hidden modules
+webpack: Compiled successfully.
+Killed
+
+npm ERR! Linux 4.4.0-59-generic
+npm ERR! argv "/usr/bin/nodejs" "/usr/bin/npm" "run" "development"
+npm ERR! node v4.2.6
+npm ERR! npm  v3.5.2
+npm ERR! code ELIFECYCLE
+npm ERR! showmetheposter@1.0.0 development: `NODE_ENV=development node ./build/main.js`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the showmetheposter@1.0.0 development script 'NODE_ENV=development node ./build/main.js'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the showmetheposter package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     NODE_ENV=development node ./build/main.js
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs showmetheposter
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls showmetheposter
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/ubuntu/showmetheposter/npm-debug.log
