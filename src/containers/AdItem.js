@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, Thumbnail} from 'react-bootstrap';
 import axios from 'axios';
-import config from '../config';
+import * as config from '../config';
 import {smallImgSize, mediumImgSize, largeImgSize,divContent,priceTag} from '../css';
 import MediaQuery from 'react-responsive';
 

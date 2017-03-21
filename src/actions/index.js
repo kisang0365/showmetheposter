@@ -1,13 +1,13 @@
 import axios from 'axios';
 import cookie from 'react-cookie';
-import config from '../config';
+import * as config from '../config';
 import * as types from './types';
 
-const CLIENT_ROOT_URL = config.CLIENT_ROOT_URL;
-const CLIENT_LOCAL_URL = config.CLINET_LOCAL_URL;
+const CLIENT_ROOT_DOMAIN = config.CLIENT_ROOT_DOMAIN;
+const CLIENT_ROOT_URL = config.CLINET_ROOT_URL;
 
-const API_URL = CLIENT_ROOT_URL+'/api';
-const API_LOCAL_URL = CLIENT_LOCAL_URL+'/api';
+const API_ROOT_DOMAIN = CLIENT_ROOT_DOMAIN+'/api';
+const API_ROOT_URL = CLIENT_ROOT_URL+'/api';
 
 /**********************************
 *
@@ -40,7 +40,7 @@ export function changePage() {
 export function adInputData({name, url, picUrl, inputTime, expired}){
   return function (dispatch){
     var instance = axios.create({
-        baseURL: API_LOCAL_URL,
+        baseURL: API_ROOT_URL,
         timeout: 2000,
         headers: {'x-access-token': localStorage.getItem('token') }
     });

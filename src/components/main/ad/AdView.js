@@ -10,7 +10,7 @@ import TopBanner from './TopBanner';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import * as actions from '../../../actions';
-import config from '../../../config';
+import * as config from '../../../config';
 
 class AdView extends React.Component  {
 
