@@ -6,7 +6,7 @@ import {smallImgSize, mediumImgSize, largeImgSize,divContent,priceTag} from '../
 import MediaQuery from 'react-responsive';
 
 
-export default class ProductItem  extends React.Component  {
+export default class AdItem  extends React.Component  {
   constructor(props) {
         super(props);
 
@@ -24,7 +24,7 @@ export default class ProductItem  extends React.Component  {
 
   mouseClick(){
     //  window.ga('send', 'itemClick', "this.state.item.name");
-      window.open( config.CLIENT_ROOT_DOMAIN+"/temp/"+this.state.item._id,'_blank');
+      window.open( "showmetheposter"+"/temp/"+this.state.item._id,'_blank');
   }
 
   mouseOver() {
