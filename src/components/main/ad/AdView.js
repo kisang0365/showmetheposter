@@ -75,7 +75,7 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(actions.changeNowPage(page))
     },
     handleOnAdTypeChange : (adType) => {
-      dispatch(actions.changeAdtype(adType))
+      dispatch(actions.changeAdType(adType))
     },
     handleOnChange : (data) => {
       dispatch(
