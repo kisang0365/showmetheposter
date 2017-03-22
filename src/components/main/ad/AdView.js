@@ -29,7 +29,7 @@ class AdView extends React.Component  {
     }
 
     refresh(){
-      const {sortBy, nowPage, listPage, ads} = this.props;
+      const {adType, sortBy, nowPage, listPage, ads} = this.props;
       var url = 'api/list/'+sortBy + '/' + nowPage;
       axios.get(url)
         .then(res => {
@@ -59,6 +59,7 @@ class AdView extends React.Component  {
 
 const mapStateToProps = (state) =>{
   return {
+    adType:state.getLIst.adTpye,
     sortBy:state.getList.sortBy,    //recentu or recentd or priceu or priced
     nowPage:state.getList.nowPage,
     listPage:state.getList.listPage,  //리스트 페이지 갯수

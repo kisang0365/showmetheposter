@@ -1,6 +1,7 @@
 export const AD_INPUT_DATA = 'ad_input_data',
              AD_INPUT_SUCCESS = 'ad_input_success',
              AD_INPUT_FAILED = 'ad_input_failed',
+             CHANGE_ADTYPE = 'change_adType',
              CHANGE_SORTBY = 'change_sortby',
              CHANGE_NOWPAGE = 'change_nowpage',
              CHAGNE_LISTPAGE = 'change_listpage',

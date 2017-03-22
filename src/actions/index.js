@@ -19,6 +19,13 @@ export function changeOption(data) {
     };
 }
 
+export function changeAdType(adType) {
+    return {
+        type: types.CHANGE_ADTYPE,
+        adType : adType
+    };
+}
+
 export function changeNowPage(page) {
     return {
         type: types.CHANGE_NOWPAGE,
@@ -41,6 +48,7 @@ export function adInputData({name, adType, url, picUrl, inputTime, expired}){
         timeout: 2000,
         headers: {'x-access-token': localStorage.getItem('token') }
     });
+
     instance.post(`/ad/input`, {name, adType, url,picUrl, inputTime,expired })
     .then(response => {
       dispatch({ type: types.AD_INPUT_SUCCESS });
