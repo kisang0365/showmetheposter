@@ -24861,22 +24861,22 @@ var ItemList = function (_React$Component) {
           { style: _css.colCentered },
           _react2.default.createElement(
             _reactBootstrap.Col,
-            { xs: 6, md: 3 },
+            { xs: 12, md: 6 },
             _react2.default.createElement(_AdItem2.default, { item: this.props.ads[0] })
           ),
           _react2.default.createElement(
             _reactBootstrap.Col,
-            { xs: 6, md: 3 },
+            { xs: 12, md: 6 },
             _react2.default.createElement(_AdItem2.default, { item: this.props.ads[1] })
           ),
           _react2.default.createElement(
             _reactBootstrap.Col,
-            { xs: 6, md: 3 },
+            { xs: 12, md: 6 },
             _react2.default.createElement(_AdItem2.default, { item: this.props.ads[2] })
           ),
           _react2.default.createElement(
             _reactBootstrap.Col,
-            { xs: 6, md: 3 },
+            { xs: 12, md: 6 },
             _react2.default.createElement(_AdItem2.default, { item: this.props.ads[3] })
           )
         )
@@ -24979,7 +24979,7 @@ var OptionItem = function (_React$Component) {
             { style: _css.colCentered },
             _react2.default.createElement(
               _reactBootstrap.Col,
-              { style: _css.rightAlign, xsOffset: 2, mdOffset: 4, lgOffset: 4, xs: 3, md: 2, lg: 2 },
+              { style: _css.rightAlign, xsOffset: 2, mdOffset: 4, lgOffset: 4, xs: 5, md: 2, lg: 2 },
               _react2.default.createElement(
                 'button',
                 { style: _css.unSelected },
@@ -24989,7 +24989,7 @@ var OptionItem = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrap.Col,
-              { style: _css.leftAlign, xs: 7, md: 6, lg: 6 },
+              { style: _css.leftAlign, xs: 5, md: 6, lg: 6 },
               _react2.default.createElement(
                 'button',
                 { style: this.props.adType == 'All' ? _css.selected : _css.unSelected, onClick: this.handleAdTypeClick('All') },
@@ -25955,6 +25955,7 @@ exports.default = PartnerForm;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.largeImgSize = exports.mediumImgSize = exports.smallImgSize = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -25987,6 +25988,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var smallImgSize = exports.smallImgSize = {
+  border: "1px solid lightgrey",
+  borderRadius: "10px",
+  width: "140px",
+  height: "140px"
+};
+
+var mediumImgSize = exports.mediumImgSize = {
+  border: "1px solid lightgrey",
+  borderRadius: "10px",
+  width: "200px",
+  height: "200px"
+};
+
+var largeImgSize = exports.largeImgSize = {
+  border: "1px solid lightgrey",
+  borderRadius: "10px",
+  width: "250px",
+  height: "250px"
+};
 
 var AdItem = function (_React$Component) {
   _inherits(AdItem, _React$Component);
@@ -26044,35 +26066,85 @@ var AdItem = function (_React$Component) {
         { style: linkStyle, onMouseOver: this.mouseOver.bind(this),
           onMouseOut: this.mouseOut.bind(this), onClick: this.mouseClick.bind(this) },
         _react2.default.createElement(
-          _reactResponsive2.default,
-          { minDeviceWidth: 1025 },
-          _react2.default.createElement(_reactBootstrap.Image, { style: _css.largeImgSize, src: item.picUrl, rounded: true })
-        ),
-        _react2.default.createElement(
-          _reactResponsive2.default,
-          { maxDeviceWidth: 1224 },
+          _reactBootstrap.Grid,
+          { style: _css.colCentered },
           _react2.default.createElement(
-            _reactResponsive2.default,
-            { maxDeviceWidth: 500 },
-            _react2.default.createElement(_reactBootstrap.Image, { style: _css.smallImgSize, src: item.picUrl, rounded: true })
-          ),
-          _react2.default.createElement(
-            _reactResponsive2.default,
-            { minDeviceWidth: 501 },
-            _react2.default.createElement(_reactBootstrap.Image, { style: _css.mediumImgSize, src: item.picUrl, rounded: true })
-          )
-        ),
-        _react2.default.createElement(
-          'p',
-          { style: fontStyle },
-          _react2.default.createElement(
-            'b',
+            _reactBootstrap.Row,
             null,
-            '[',
-            item.name,
-            ']'
-          ),
-          _react2.default.createElement('br', null)
+            _react2.default.createElement(
+              _reactBootstrap.Col,
+              { xs: 6, md: 3, lg: 3 },
+              _react2.default.createElement(
+                _reactResponsive2.default,
+                { minDeviceWidth: 1025 },
+                _react2.default.createElement(_reactBootstrap.Image, { style: largeImgSize, src: item.picUrl, rounded: true })
+              ),
+              _react2.default.createElement(
+                _reactResponsive2.default,
+                { maxDeviceWidth: 1224 },
+                _react2.default.createElement(
+                  _reactResponsive2.default,
+                  { maxDeviceWidth: 500 },
+                  _react2.default.createElement(_reactBootstrap.Image, { style: smallImgSize, src: item.picUrl, rounded: true })
+                ),
+                _react2.default.createElement(
+                  _reactResponsive2.default,
+                  { minDeviceWidth: 501 },
+                  _react2.default.createElement(_reactBootstrap.Image, { style: mediumImgSize, src: item.picUrl, rounded: true })
+                )
+              )
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Col,
+              { style: _css.leftAlign, xs: 6, md: 3, lg: 3 },
+              _react2.default.createElement(
+                'p',
+                { style: fontStyle },
+                _react2.default.createElement(
+                  'b',
+                  null,
+                  ' [',
+                  item.name,
+                  '] '
+                ),
+                _react2.default.createElement('br', null)
+              ),
+              _react2.default.createElement(
+                'p',
+                { style: fontStyle },
+                _react2.default.createElement(
+                  'b',
+                  null,
+                  '03.22 ~ 04.05'
+                ),
+                _react2.default.createElement('br', null)
+              ),
+              _react2.default.createElement(
+                'p',
+                { style: fontStyle },
+                _react2.default.createElement(
+                  'b',
+                  null,
+                  '\uACBD\uD488'
+                ),
+                _react2.default.createElement('br', null)
+              ),
+              _react2.default.createElement(
+                'ul',
+                { style: fontStyle },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  '\uC2AC\uB9AC\uD37C '
+                )
+              )
+            )
+          )
         )
       );
     }
