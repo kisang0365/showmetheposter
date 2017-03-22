@@ -6,6 +6,7 @@ import {colCentered} from '../../../css';
 import ItemList from './ItemList';
 import PageItem from './PageItem';
 import TopBanner from './TopBanner';
+import OptionItem from './OptionItem';
 
 import axios from 'axios';
 import { connect } from 'react-redux';
@@ -44,7 +45,7 @@ class AdView extends React.Component  {
 
     	      return(
               <div>
-                <br/><br/>
+                <br/><OptionItem adType={adType} onAdTypeClick={this.props.handleOnAdTypeChange}><br/>
 
                 <ItemList ads={ads.slice(0,4)}/>
                 <ItemList ads={ads.slice(4,8)}/>
