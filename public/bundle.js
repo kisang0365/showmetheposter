@@ -3829,6 +3829,13 @@ var colCentered = exports.colCentered = {
   textAlign: "center"
 };
 
+var optionColCentered = exports.optionColCentered = {
+  float: "none",
+  margin: "0 auto",
+  marginTop: "50px",
+  textAlign: "center"
+};
+
 var categorySelect = exports.categorySelect = {
   color: "#424242",
   fontSize: "1.5em",
@@ -24962,34 +24969,38 @@ var OptionItem = function (_React$Component) {
 
 
       return _react2.default.createElement(
-        _reactBootstrap.Grid,
-        { style: _css.borderLine },
+        'div',
+        null,
         _react2.default.createElement(
-          _reactBootstrap.Row,
-          { style: _css.colCentered },
+          _reactBootstrap.Grid,
+          { style: _css.borderLine },
           _react2.default.createElement(
-            _reactBootstrap.Col,
-            { style: _css.rightAlign, xsOffset: 2, mdOffset: 4, lgOffset: 4, xs: 3, md: 2, lg: 2 },
+            _reactBootstrap.Row,
+            { style: _css.colCentered },
             _react2.default.createElement(
-              'button',
-              { style: _css.unSelected },
-              ' \uC774\uBCA4\uD2B8 \uD0C0\uC785 '
+              _reactBootstrap.Col,
+              { style: _css.rightAlign, xsOffset: 2, mdOffset: 4, lgOffset: 4, xs: 3, md: 2, lg: 2 },
+              _react2.default.createElement(
+                'button',
+                { style: _css.unSelected },
+                ' \uC774\uBCA4\uD2B8 \uD0C0\uC785 '
+              ),
+              ' '
             ),
-            ' '
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Col,
-            { style: _css.leftAlign, xs: 7, md: 6, lg: 6 },
             _react2.default.createElement(
-              'button',
-              { style: this.props.adType == 'All' ? _css.selected : _css.unSelected, onClick: this.handleAdTypeClick('All') },
-              ' \uC804\uCCB4\uBCF4\uAE30 '
+              _reactBootstrap.Col,
+              { style: _css.leftAlign, xs: 7, md: 6, lg: 6 },
+              _react2.default.createElement(
+                'button',
+                { style: this.props.adType == 'All' ? _css.selected : _css.unSelected, onClick: this.handleAdTypeClick('All') },
+                ' \uC804\uCCB4\uBCF4\uAE30 '
+              )
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Col,
+              { style: _css.OptionColCentered, xs: 12, md: 12, lg: 12 },
+              this.typeSelect()
             )
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Col,
-            { style: _css.colCentered, xs: 12, md: 12, lg: 12 },
-            this.typeSelect()
           )
         )
       );
