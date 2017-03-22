@@ -23,7 +23,7 @@ class OptionItem extends React.Component  {
     typeSelect() {
             return(
               adTypeEnglishName.map( (n,i) =>
-              <button style={this.props.adType==adTypeEnglishName[i] ? selected : unSelected} onClick={this.handleAdTypeClick(adTypeEnglishName[i])} >adTypeKoreanName[i]</button>              >
+              <button style={this.props.adType==adTypeEnglishName[i] ? selected : unSelected} onClick={this.handleAdTypeClick(adTypeEnglishName[i])} > adTypeKoreanName[i] </button>
                )
            );
      }
