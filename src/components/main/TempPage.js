@@ -34,8 +34,10 @@ const TempPage = ({ params }) => {
   axios.get('/api/ad/'+params.id)
     .then(res => {
        var url = res.data.ad.url;
-       if( url.indexOf('http://') <0 || url.indexOf('https://') <0 ){
-         url = "http://" + url; }
+
+       if( url.indexOf('http://') <0 && url.indexOf('https://') <0){
+         url = "http://" + url;
+       }
        alert(url);
        window.location.href = url;
   });
