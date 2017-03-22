@@ -41,8 +41,6 @@ class OptionItem extends React.Component  {
               <Col style = {leftAlign} xs = {6} md={2} lg = {2}>
                 <button style={this.props.adType=='All' ? selected : unSelected} onClick={this.handleAdTypeClick('All')} > 전체보기 </button>
               </Col>
-            </Row>
-            <Row style={colCentered}>
               <Col style = {colCentered} xs = {12} md={12} lg = {12}>
                 {this.typeSelect()}
               </Col>

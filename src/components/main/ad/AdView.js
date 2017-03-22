@@ -60,7 +60,7 @@ class AdView extends React.Component  {
 
 const mapStateToProps = (state) =>{
   return {
-    adType:state.getList.adTpye,
+    adType:state.getList.adType,
     sortBy:state.getList.sortBy,    //recentu or recentd or priceu or priced
     nowPage:state.getList.nowPage,
     listPage:state.getList.listPage,  //리스트 페이지 갯수
