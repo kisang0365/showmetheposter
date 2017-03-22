@@ -43,7 +43,7 @@ class AdView extends React.Component  {
 
     	      return(
               <div>
-                <br/><TopBanner/><br/>
+                <br/><br/>
 
                 <ItemList ads={ads.slice(0,4)}/>
                 <ItemList ads={ads.slice(4,8)}/>
