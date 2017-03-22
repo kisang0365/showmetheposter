@@ -1,7 +1,6 @@
 
 import React from 'react';
 import {Form,FormControl, Grid, Row, Col, ButtonToolbar, Button, ButtonGroup, Glyphicon} from 'react-bootstrap';
-import {ReadMore,Truncate} from 'react-read-more';
 import {colCentered,borderLine, selected, unSelected, divContent, leftAlign, rightAlign, formEdit, adTypeEnglishName, adTypeKoreanName} from '../../../css';
 import config from '../../../config';
 import axios from 'axios';
