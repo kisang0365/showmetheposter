@@ -32,7 +32,7 @@ class AdView extends React.Component  {
 
     refresh(){
       const {adType, sortBy, nowPage, listPage, ads} = this.props;
-      var url = 'api/list/'+sortBy + '/' + nowPage;
+      var url = 'api/list/'+adType + '/' + sortBy + '/' + nowPage;
       axios.get(url)
         .then(res => {
           this.props.handleOnChange(res.data);

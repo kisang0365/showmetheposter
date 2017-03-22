@@ -14401,10 +14401,10 @@ function changeOption(data) {
     };
 }
 
-function changeAdType(adType) {
+function changeAdType(t) {
     return {
         type: types.CHANGE_ADTYPE,
-        adType: adType
+        adType: t
     };
 }
 
@@ -24731,7 +24731,7 @@ var AdView = function (_React$Component) {
           listPage = _props.listPage,
           ads = _props.ads;
 
-      var url = 'api/list/' + sortBy + '/' + nowPage;
+      var url = 'api/list/' + adType + '/' + sortBy + '/' + nowPage;
       _axios2.default.get(url).then(function (res) {
         _this2.props.handleOnChange(res.data);
         document.body.scrollTop = 0;
@@ -24773,7 +24773,7 @@ var AdView = function (_React$Component) {
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    adType: state.getList.adTpye,
+    adType: state.getList.adType,
     sortBy: state.getList.sortBy, //recentu or recentd or priceu or priced
     nowPage: state.getList.nowPage,
     listPage: state.getList.listPage, //리스트 페이지 갯수
@@ -24787,7 +24787,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
       dispatch(actions.changeNowPage(page));
     },
     handleOnAdTypeChange: function handleOnAdTypeChange(adType) {
-      dispatch(actions.changeAdtype(adType));
+      dispatch(actions.changeAdType(adType));
     },
     handleOnChange: function handleOnChange(data) {
       dispatch(actions.changeOption({
@@ -24971,15 +24971,24 @@ var OptionItem = function (_React$Component) {
             _reactBootstrap.Col,
             { style: _css.rightAlign, xsOffset: 2, mdOffset: 4, lgOffset: 4, xs: 3, md: 2, lg: 2 },
             _react2.default.createElement(
-              'b',
-              null,
-              '\uC774\uBCA4\uD2B8 \uD0C0\uC785'
+              'button',
+              { style: _css.unSelected },
+              ' \uC774\uBCA4\uD2B8 \uD0C0\uC785 '
             ),
             ' '
           ),
           _react2.default.createElement(
             _reactBootstrap.Col,
-            { style: _css.leftAlign, xs: 6, md: 2, lg: 2 },
+            { style: _css.leftAlign, xs: 7, md: 6, lg: 6 },
+            _react2.default.createElement(
+              'button',
+              { style: this.props.adType == 'All' ? _css.selected : _css.unSelected, onClick: this.handleAdTypeClick('All') },
+              ' \uC804\uCCB4\uBCF4\uAE30 '
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Col,
+            { style: _css.colCentered, xs: 12, md: 12, lg: 12 },
             this.typeSelect()
           )
         )
