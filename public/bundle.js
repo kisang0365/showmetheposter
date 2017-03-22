@@ -24585,7 +24585,8 @@ var TempPage = function TempPage(_ref) {
 
   _axios2.default.get('/api/ad/' + params.id).then(function (res) {
     var url = res.data.ad.url;
-    if (url.indexOf('http://') < 0 || url.indexOf('https://') < 0) {
+
+    if (url.indexOf('http://') < 0 && url.indexOf('https://') < 0) {
       url = "http://" + url;
     }
     window.location.href = url;
@@ -24734,7 +24735,6 @@ var AdView = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement('br', null),
-        _react2.default.createElement(_TopBanner2.default, null),
         _react2.default.createElement('br', null),
         _react2.default.createElement(_ItemList2.default, { ads: ads.slice(0, 4) }),
         _react2.default.createElement(_ItemList2.default, { ads: ads.slice(4, 8) }),
