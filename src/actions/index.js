@@ -19,10 +19,10 @@ export function changeOption(data) {
     };
 }
 
-export function changeAdType(adType) {
+export function changeAdType(t) {
     return {
         type: types.CHANGE_ADTYPE,
-        adType : adType
+        adType : t
     };
 }
 

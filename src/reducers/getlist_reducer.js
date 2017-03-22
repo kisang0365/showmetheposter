@@ -7,7 +7,7 @@ import {
   CHANGE_PAGE} from '../actions/types';
 
 const INITIAL_STATE = {
-   adType:"All",
+   adType:"facebook",
    sortBy:"recentu",    //recentu or recentd or priceu or priced
    nowPage:1,
    listPage:1,  //리스트 페이지 갯수
