@@ -39,7 +39,7 @@ class OptionItem extends React.Component  {
                 {' '}
               </Col>
               <Col style = {leftAlign} xs = {6} md={2} lg = {2}>
-                {this.typeSelect}
+                {this.typeSelect()}
               </Col>
             </Row>
          </Grid>
