@@ -1,13 +1,10 @@
 import axios from 'axios';
 import cookie from 'react-cookie';
-import * as config from '../config';
+import config from '../config';
 import * as types from './types';
 
-const CLIENT_ROOT_DOMAIN = config.CLIENT_ROOT_DOMAIN;
-const CLIENT_ROOT_URL = config.CLINET_ROOT_URL;
-
-const API_ROOT_DOMAIN = CLIENT_ROOT_DOMAIN+'/api';
-const API_ROOT_URL = CLIENT_ROOT_URL+'/api';
+const API_ROOT_DOMAIN = config.CLIENT_ROOT_DOMAIN+'/api';
+const API_ROOT_URL = config.CLIENT_ROOT_URL+'/api';
 
 /**********************************
 *
@@ -37,15 +34,14 @@ export function changePage() {
 
 
 
-export function adInputData({name, url, picUrl, inputTime, expired}){
+export function adInputData({name, adType, url, picUrl, inputTime, expired}){
   return function (dispatch){
     var instance = axios.create({
         baseURL: API_ROOT_URL,
         timeout: 2000,
         headers: {'x-access-token': localStorage.getItem('token') }
     });
-
-    instance.post(`/ad/input`, {name,url,picUrl, inputTime,expired })
+    instance.post(`/ad/input`, {name, adType, url,picUrl, inputTime,expired })
     .then(response => {
       dispatch({ type: types.AD_INPUT_SUCCESS });
       alert("input success");

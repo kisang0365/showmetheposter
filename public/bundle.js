@@ -4406,11 +4406,11 @@ module.exports = reactProdInvariant;
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-   value: true
-});
-var CLIENT_ROOT_URL = exports.CLIENT_ROOT_URL = 'http://13.124.62.215',
-    CLINET_ROOT_DOMAIN = exports.CLINET_ROOT_DOMAIN = 'http://www.showmetheposter.com';
+var config = {
+             CLIENT_ROOT_URL: 'http://13.124.62.215',
+             CLINET_ROOT_DOMAIN: 'http://www.showmetheposter.com'
+};
+module.exports = config;
 
 /***/ }),
 /* 51 */
@@ -4422,8 +4422,7 @@ var CLIENT_ROOT_URL = exports.CLIENT_ROOT_URL = 'http://13.124.62.215',
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.categoryNameTranslation = categoryNameTranslation;
-exports.cosmeticNameTranslation = cosmeticNameTranslation;
+exports.adTypeTranslation = adTypeTranslation;
 var colCentered = exports.colCentered = {
   float: "none",
   margin: "0 auto",
@@ -4572,24 +4571,11 @@ var burger = exports.burger = {
   }
 };
 
-var cosmeticKoreanName = exports.cosmeticKoreanName = ["스킨케어", "스킨", "로션/에멀젼", "에센스/앰플/세럼", "크림", "아이케어", "미스트/부스터", "세트", "클렌징/마사지/팩", "클렌징폼", "클렌징크림/로션/워터", "클렌징젤/오일/티슈", "마사지/필링", "팩", "미용비누", "세트", "메이크업", "씨씨크림", "비비크림", "메이크업베이스/프라이머", "파운데이션", "파우더/팩트", "립스틱/립밤", "립글로스", "틴트", "아이섀도우", "마스카라", "아이브로우", "네일", "세트", "바디/헤어", "바디클렌저/스크럽", "바디로션/오일", "샤워코롱/바디미스트", "핸드&풋", "샴푸/린스", "헤어스타일링", "헤어컬러링", "데오드란트", "바디슬림", "여성청결제", "향수", "세트"];
+var adTypeKoreanName = exports.adTypeKoreanName = ["페이스북", "홈페이지"];
 
-var cosmeticEnglishName = exports.cosmeticEnglishName = ["skin-lotion-essence-cream-eyecare-mist-skinset", "skin", "lotion", "essence", "cream", "eyecare", "mist", "skinset", "cleansingfoam-cleansingcream-cleansinggel-massage-pack-soap-cleansingset", "cleansingfoam", "cleansingcream", "cleansinggel", "massage", "pack", "soap", "cleansingset", "cccream-bbcream-makeupbase-foundation-powder-lipstick-lipgloss-tint-eyeshadow-mascara-eyebrow-nail-makeupset", "cccream", "bbcream", "makeupbase", "foundation", "powder", "lipstick", "lipgloss", "tint", "eyeshadow", "mascara", "eyebrow", "nail", "makeupset", "bodycleanser-bodylotion-shower-hand-shampoo-hairstyle-haircolor-deodorant-bodyslim-femininecleanser-perfume-bodyset", "bodycleanser", "bodylotion", "shower", "hand", "shampoo", "hairstyle", "haircolor", "deodorant", "bodyslim", "femininecleanser", "perfume", "bodyset"];
+var adTypeEnglishName = exports.adTypeEnglishName = ["facebook", "homepage"];
 
-var categoryKoreanName = exports.categoryKoreanName = ['아우터', '자켓', '점퍼', '코트', '집업', '상의', '티셔츠', '셔츠', '맨투맨', '후드', '니트', '원피스', '하의', '데님', '면바지/슬랙스', '반바지', '트레이닝 바지', '스커트', '기타', '가방', '모자', '양말', '반지', '귀걸이'];
-
-var categoryEnglishName = exports.categoryEnglishName = ['jacket-jumper-coat-zipup', 'jacket', 'jumper', 'coat', 'zipup', 'tshirt-shirt-mtm-hood-knit-1piece', 'tshirt', 'shirt', 'mtm', 'hood', 'knit', '1piece', 'denim-slacks-training-skirt-shorts', 'denim', 'slacks', 'shorts', 'training', 'skirt', 'bag-cap-ring-socks', 'bag', 'cap', 'socks', 'ring', 'earing'];
-
-function categoryNameTranslation(string) {
-  //USE MAPPING
-  var korean = "";
-  var index = categoryEnglishName.indexOf(string);
-  index != -1 ? korean = categoryKoreanName[index] : korean = "전체보기";
-  return korean;
-}
-
-function cosmeticNameTranslation(string) {
-
+function adTypeTranslation(string) {
   var korean = "";
   var index = cosmeticEnglishName.indexOf(string);
   index != -1 ? korean = cosmeticKoreanName[index] : korean = "전체보기";
@@ -14388,7 +14374,7 @@ var _reactCookie2 = _interopRequireDefault(_reactCookie);
 
 var _config = __webpack_require__(50);
 
-var config = _interopRequireWildcard(_config);
+var _config2 = _interopRequireDefault(_config);
 
 var _types = __webpack_require__(191);
 
@@ -14398,11 +14384,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var CLIENT_ROOT_DOMAIN = config.CLIENT_ROOT_DOMAIN;
-var CLIENT_ROOT_URL = config.CLINET_ROOT_URL;
-
-var API_ROOT_DOMAIN = CLIENT_ROOT_DOMAIN + '/api';
-var API_ROOT_URL = CLIENT_ROOT_URL + '/api';
+var API_ROOT_DOMAIN = _config2.default.CLIENT_ROOT_DOMAIN + '/api';
+var API_ROOT_URL = _config2.default.CLIENT_ROOT_URL + '/api';
 
 /**********************************
 *
@@ -14432,6 +14415,7 @@ function changePage() {
 
 function adInputData(_ref) {
     var name = _ref.name,
+        adType = _ref.adType,
         url = _ref.url,
         picUrl = _ref.picUrl,
         inputTime = _ref.inputTime,
@@ -14443,8 +14427,7 @@ function adInputData(_ref) {
             timeout: 2000,
             headers: { 'x-access-token': localStorage.getItem('token') }
         });
-
-        instance.post('/ad/input', { name: name, url: url, picUrl: picUrl, inputTime: inputTime, expired: expired }).then(function (response) {
+        instance.post('/ad/input', { name: name, adType: adType, url: url, picUrl: picUrl, inputTime: inputTime, expired: expired }).then(function (response) {
             dispatch({ type: types.AD_INPUT_SUCCESS });
             alert("input success");
         }).catch(function (error) {
@@ -14543,36 +14526,43 @@ var TopBanner = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        _reactBootstrap.Carousel,
+        'div',
         null,
         _react2.default.createElement(
-          'a',
-          { style: bannerA, href: '/category' },
+          _reactBootstrap.Carousel,
+          null,
           _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
+            'a',
+            { style: bannerA, href: '/advertise' },
             _react2.default.createElement(
-              _reactResponsive2.default,
-              { minDeviceWidth: 1025 },
-              _react2.default.createElement(_reactBootstrap.Image, { style: largeImgSize, alt: '900x500', src: '/assets/event1.png' })
-            ),
-            _react2.default.createElement(
-              _reactResponsive2.default,
-              { maxDeviceWidth: 1224 },
+              _reactBootstrap.Carousel.Item,
+              null,
               _react2.default.createElement(
                 _reactResponsive2.default,
-                { maxDeviceWidth: 500 },
-                _react2.default.createElement(_reactBootstrap.Image, { style: smallImgSize, alt: '900x500', src: '/assets/event1.png' })
+                { minDeviceWidth: 1025 },
+                _react2.default.createElement(_reactBootstrap.Image, { style: largeImgSize, alt: '900x500', src: '/assets/logo.png' })
               ),
               _react2.default.createElement(
                 _reactResponsive2.default,
-                { minDeviceWidth: 501 },
-                _react2.default.createElement(_reactBootstrap.Image, { style: mediumImgSize, alt: '900x500', src: '/assets/event1.png' })
-              )
-            ),
-            _react2.default.createElement(_reactBootstrap.Carousel.Caption, null)
+                { maxDeviceWidth: 1224 },
+                _react2.default.createElement(
+                  _reactResponsive2.default,
+                  { maxDeviceWidth: 500 },
+                  _react2.default.createElement(_reactBootstrap.Image, { style: smallImgSize, alt: '900x500', src: '/assets/logo.png' })
+                ),
+                _react2.default.createElement(
+                  _reactResponsive2.default,
+                  { minDeviceWidth: 501 },
+                  _react2.default.createElement(_reactBootstrap.Image, { style: mediumImgSize, alt: '900x500', src: '/assets/logo.png' })
+                )
+              ),
+              _react2.default.createElement(_reactBootstrap.Carousel.Caption, null)
+            )
           )
-        )
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null)
       );
     }
   }]);
@@ -24328,6 +24318,21 @@ var AdInput = function (_React$Component) {
       this.props.adInputData(formProps);
     }
   }, {
+    key: 'types',
+    value: function types() {
+      return _css.adTypeEnglishName.map(function (n, i) {
+        return _react2.default.createElement(
+          'label',
+          null,
+          _react2.default.createElement(_reduxForm.Field, { name: 'adType', component: 'input', type: 'radio', value: n }),
+          ' ',
+          _css.adTypeKoreanName[i],
+          ' ',
+          '  '
+        );
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       var handleSubmit = this.props.handleSubmit;
@@ -24351,6 +24356,23 @@ var AdInput = function (_React$Component) {
                 '\uC81C\uBAA9(\uC774\uB984)'
               ),
               _react2.default.createElement(_reduxForm.Field, { name: 'name', className: 'form-control', component: 'input', type: 'text' })
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'label',
+                null,
+                ' Type(\uC774\uBCA4\uD2B8 \uD0C0\uC785) '
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                ' ',
+                this.types(),
+                ' '
+              )
             ),
             _react2.default.createElement(
               'div',
@@ -24486,6 +24508,8 @@ var Main = function (_React$Component) {
           'div',
           null,
           _react2.default.createElement(_MainNav2.default, null),
+          _react2.default.createElement('br', null),
+          _react2.default.createElement('br', null),
           _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/', component: _Home2.default }),
           _react2.default.createElement(_reactRouter.Match, { pattern: '/advertise', component: _AdView2.default }),
           _react2.default.createElement(_reactRouter.Match, { pattern: '/opinion', component: _Opinion2.default }),
@@ -25039,36 +25063,43 @@ var TopBanner = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        _reactBootstrap.Carousel,
+        'div',
         null,
         _react2.default.createElement(
-          'a',
-          { style: bannerA, href: '/advertise' },
+          _reactBootstrap.Carousel,
+          null,
           _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
+            'a',
+            { style: bannerA, href: '/advertise' },
             _react2.default.createElement(
-              _reactResponsive2.default,
-              { minDeviceWidth: 1025 },
-              _react2.default.createElement(_reactBootstrap.Image, { style: largeImgSize, alt: '900x500', src: '/assets/ad1.png' })
-            ),
-            _react2.default.createElement(
-              _reactResponsive2.default,
-              { maxDeviceWidth: 1224 },
+              _reactBootstrap.Carousel.Item,
+              null,
               _react2.default.createElement(
                 _reactResponsive2.default,
-                { maxDeviceWidth: 500 },
-                _react2.default.createElement(_reactBootstrap.Image, { style: smallImgSize, alt: '900x500', src: '/assets/ad1.png' })
+                { minDeviceWidth: 1025 },
+                _react2.default.createElement(_reactBootstrap.Image, { style: largeImgSize, alt: '900x500', src: '/assets/ad1.png' })
               ),
               _react2.default.createElement(
                 _reactResponsive2.default,
-                { minDeviceWidth: 501 },
-                _react2.default.createElement(_reactBootstrap.Image, { style: mediumImgSize, alt: '900x500', src: '/assets/ad1.png' })
-              )
-            ),
-            _react2.default.createElement(_reactBootstrap.Carousel.Caption, null)
+                { maxDeviceWidth: 1224 },
+                _react2.default.createElement(
+                  _reactResponsive2.default,
+                  { maxDeviceWidth: 500 },
+                  _react2.default.createElement(_reactBootstrap.Image, { style: smallImgSize, alt: '900x500', src: '/assets/ad1.png' })
+                ),
+                _react2.default.createElement(
+                  _reactResponsive2.default,
+                  { minDeviceWidth: 501 },
+                  _react2.default.createElement(_reactBootstrap.Image, { style: mediumImgSize, alt: '900x500', src: '/assets/ad1.png' })
+                )
+              ),
+              _react2.default.createElement(_reactBootstrap.Carousel.Caption, null)
+            )
           )
-        )
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null)
       );
     }
   }]);
@@ -25123,9 +25154,8 @@ var Home = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement('br', null),
-        _react2.default.createElement('br', null),
-        _react2.default.createElement('br', null),
-        _react2.default.createElement(_TopBanner2.default, null)
+        _react2.default.createElement(_TopBanner2.default, null),
+        _react2.default.createElement('br', null)
       );
     }
   }]);
@@ -25216,7 +25246,7 @@ var MainNav = function (_React$Component) {
             { pullRight: true },
             _react2.default.createElement(
               _reactBootstrap.Navbar.Link,
-              { style: _css.linkColor, href: '/partner' },
+              { style: _css.linkColor, href: '/opinion' },
               ' \uACE0\uAC1D \uBB38\uC758'
             )
           ),
@@ -25225,7 +25255,7 @@ var MainNav = function (_React$Component) {
             { pullRight: true },
             _react2.default.createElement(
               _reactBootstrap.Navbar.Link,
-              { style: _css.linkColor, href: '/opinion' },
+              { style: _css.linkColor, href: '/partner' },
               ' \uAD11\uACE0 \uBB38\uC758'
             )
           )
@@ -25476,7 +25506,7 @@ var OpinionForm = function (_React$Component) {
           _react2.default.createElement(
             'small',
             null,
-            '\uBB38\uC758\uD558\uAE30'
+            '\uACE0\uAC1D \uBB38\uC758'
           )
         ),
         _react2.default.createElement(
@@ -25686,7 +25716,7 @@ var PartnerForm = function (_React$Component) {
           _react2.default.createElement(
             'small',
             null,
-            '\uC81C\uD734 \uBB38\uC758'
+            '\uAD11\uACE0 \uBB38\uC758 '
           )
         ),
         _react2.default.createElement(
@@ -25877,6 +25907,18 @@ var AdItem = function (_React$Component) {
             { minDeviceWidth: 501 },
             _react2.default.createElement(_reactBootstrap.Image, { style: _css.mediumImgSize, src: item.picUrl, rounded: true })
           )
+        ),
+        _react2.default.createElement(
+          'p',
+          { style: fontStyle },
+          _react2.default.createElement(
+            'b',
+            null,
+            '[',
+            item.name,
+            ']'
+          ),
+          _react2.default.createElement('br', null)
         )
       );
     }

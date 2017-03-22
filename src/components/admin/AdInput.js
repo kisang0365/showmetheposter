@@ -19,10 +19,7 @@ class AdInput  extends React.Component  {
     types() {
             return(
               adTypeEnglishName.map( (n,i) =>
-                 n.indexOf('-') >=0 ?
-                 <div><br/><b>{adType[i]}</b><br/></div>
-                 :
-                <label><Field name="type" component="input" type="radio" value= {n}/> {adTypeKoreanName[i]} {' '}</label>
+                <label><Field name="adType" component="input" type="radio" value= {n}/> {adTypeKoreanName[i]} {'  '}</label>
 
                )
            );
@@ -39,10 +36,10 @@ class AdInput  extends React.Component  {
                     <label>제목(이름)</label>
                     <Field name="name" className="form-control" component="input" type="text" />
                   </div>
-                  <div style = {borderLine}>
-                  <br/>
-                  <label>Type</label>
-                  {this.types()}
+                  <div>
+                    <br/>
+                    <label> Type(이벤트 타입) </label>
+                    <div> {this.types()} </div>
                   </div>
                   <div>
                     <label>url (클릭시 연결된 url)</label>
