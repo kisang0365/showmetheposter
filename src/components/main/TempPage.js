@@ -36,6 +36,7 @@ const TempPage = ({ params }) => {
        var url = res.data.ad.url;
        if( url.indexOf('http://') <0 || url.indexOf('https://') <0 ){
          url = "http://" + url; }
+       alert(url);
        window.location.href = url;
   });
 
