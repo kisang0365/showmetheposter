@@ -46,7 +46,6 @@ class AdView extends React.Component  {
     	      return(
               <div>
                 <br/><OptionItem adType={adType} onAdTypeClick={this.props.handleOnAdTypeChange} /><br/>
-                <p> 현재 선택 한 것 {adType} </p>
                 <ItemList ads={ads.slice(0,4)}/>
                 <ItemList ads={ads.slice(4,8)}/>
                 <ItemList ads={ads.slice(8,12)}/>
