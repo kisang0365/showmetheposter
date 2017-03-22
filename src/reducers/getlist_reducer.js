@@ -17,7 +17,7 @@ const INITIAL_STATE = {
 export default function (state = INITIAL_STATE, action) {
   switch(action.type) {
     case CHANGE_ADTYPE:
-      return {...state, sortBy:action.adType, nowPage:1};
+      return {...state, adType:action.adType, nowPage:1};
     case CHANGE_SORTBY:
       return {...state, sortBy:action.sortBy, nowPage:1};
     case CHANGE_NOWPAGE:

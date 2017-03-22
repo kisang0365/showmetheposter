@@ -23,7 +23,8 @@ class AdView extends React.Component  {
   componentDidUpdate(prevProps, prevState){
 
     if( this.props.sortBy != prevProps.sortBy ||
-        this.props.nowPage != prevProps.nowPage){
+        this.props.nowPage != prevProps.nowPage ||
+        this.props.adType != prevProps.adType ){
             this.refresh();
       }
     }
@@ -39,7 +40,7 @@ class AdView extends React.Component  {
     }
 
     render() {
-            const {nowPage, listPage, ads} = this.props;
+            const {adType, sortBy, nowPage, listPage, ads} = this.props;
 
     	      return(
               <div>
@@ -72,7 +73,9 @@ const mapDispatchToProps = (dispatch) => {
     handleOnPageChange : (page) => {
       dispatch(actions.changeNowPage(page))
     },
-
+    handleOnAdTypeChange : (adType) => {
+      dispatch(actions.changeAdtype(adType))
+    },
     handleOnChange : (data) => {
       dispatch(
         actions.changeOption({
