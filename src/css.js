@@ -147,31 +147,13 @@ export const burger ={
   }
 };
 
-export const cosmeticKoreanName = ["스킨케어","스킨","로션/에멀젼","에센스/앰플/세럼","크림","아이케어","미스트/부스터","세트","클렌징/마사지/팩","클렌징폼","클렌징크림/로션/워터","클렌징젤/오일/티슈","마사지/필링","팩","미용비누","세트","메이크업","씨씨크림","비비크림","메이크업베이스/프라이머","파운데이션","파우더/팩트","립스틱/립밤","립글로스","틴트","아이섀도우" ,"마스카라","아이브로우","네일","세트","바디/헤어","바디클렌저/스크럽","바디로션/오일","샤워코롱/바디미스트","핸드&풋","샴푸/린스","헤어스타일링","헤어컬러링","데오드란트","바디슬림","여성청결제","향수","세트"] 
+export const adTypeKoreanName = ["페이스북", "홈페이지"];
 
-export const cosmeticEnglishName = ["skin-lotion-essence-cream-eyecare-mist-skinset","skin","lotion","essence","cream","eyecare","mist","skinset","cleansingfoam-cleansingcream-cleansinggel-massage-pack-soap-cleansingset","cleansingfoam","cleansingcream","cleansinggel","massage","pack","soap","cleansingset","cccream-bbcream-makeupbase-foundation-powder-lipstick-lipgloss-tint-eyeshadow-mascara-eyebrow-nail-makeupset","cccream","bbcream","makeupbase","foundation","powder","lipstick","lipgloss","tint","eyeshadow","mascara","eyebrow","nail","makeupset","bodycleanser-bodylotion-shower-hand-shampoo-hairstyle-haircolor-deodorant-bodyslim-femininecleanser-perfume-bodyset","bodycleanser","bodylotion","shower","hand","shampoo","hairstyle","haircolor","deodorant","bodyslim","femininecleanser","perfume","bodyset"]
+export const adTypeEnglishName = ["facebook", "homepage"]; 
 
-export const categoryKoreanName = ['아우터', '자켓', '점퍼', '코트', '집업', '상의', '티셔츠', '셔츠', '맨투맨', '후드', '니트', '원피스','하의', '데님', '면바지/슬랙스', '반바지', '트레이닝 바지', '스커트', '기타', '가방', '모자', '양말' ,'반지', '귀걸이']
-
-export const categoryEnglishName = ['jacket-jumper-coat-zipup','jacket', 'jumper', 'coat', 'zipup', 'tshirt-shirt-mtm-hood-knit-1piece', 'tshirt', 'shirt', 'mtm', 'hood', 'knit', '1piece', 'denim-slacks-training-skirt-shorts', 'denim', 'slacks', 'shorts', 'training', 'skirt', 'bag-cap-ring-socks', 'bag', 'cap', 'socks', 'ring', 'earing']
-
-export function categoryNameTranslation(string){
-     //USE MAPPING
-    var korean = "";
-    var index = categoryEnglishName.indexOf(string);
-    index != -1 ? korean = categoryKoreanName[index] : korean = "전체보기" ;
-    return (korean);
-}
-
-export function cosmeticNameTranslation(string){
-
+export function adTypeTranslation(string){
     var korean = "";
     var index = cosmeticEnglishName.indexOf(string);
     index != -1 ? korean = cosmeticKoreanName[index] : korean = "전체보기" ;
     return (korean);
-
 }
-
-
-
-

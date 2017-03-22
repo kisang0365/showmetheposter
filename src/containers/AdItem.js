@@ -2,7 +2,7 @@ import React from 'react';
 import {Image, Thumbnail} from 'react-bootstrap';
 import axios from 'axios';
 import * as config from '../config';
-import {smallImgSize, mediumImgSize, largeImgSize,divContent,priceTag} from '../css';
+import {smallImgSize, mediumImgSize, largeImgSize,divContent} from '../css';
 import MediaQuery from 'react-responsive';
 
 
@@ -63,6 +63,9 @@ export default class AdItem  extends React.Component  {
               </MediaQuery>
             </MediaQuery>
 
+            <p style={fontStyle} >
+              <b>[{item.name}]</b><br/>
+            </p>
           </div>
       );
     }
