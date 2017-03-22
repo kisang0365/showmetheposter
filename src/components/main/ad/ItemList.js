@@ -10,16 +10,16 @@ class ItemList extends React.Component{
     return (
         <Grid>
           <Row style={colCentered}>
-            <Col xs={6} md={3} >
+            <Col xs={12} md={6} >
               <AdItem item={this.props.ads[0]}/>
             </Col>
-            <Col xs={6} md={3} >
+            <Col xs={12} md={6} >
               <AdItem item={this.props.ads[1]}/>
             </Col>
-            <Col xs={6} md={3} >
+            <Col xs={12} md={6} >
               <AdItem item={this.props.ads[2]}/>
             </Col>
-            <Col xs={6} md={3} >
+            <Col xs={12} md={6} >
               <AdItem item={this.props.ads[3]}/>
             </Col>
           </Row>
