@@ -5,6 +5,13 @@ export const colCentered = {
   textAlign: "center",
 };
 
+export const optionColCentered = {
+  float: "none",
+  margin: "0 auto",
+  marginTop: "50px",
+  textAlign: "center",
+};
+
 export const categorySelect = {
  color : "#424242",
  fontSize : "1.5em",
@@ -149,7 +156,7 @@ export const burger ={
 
 export const adTypeKoreanName = ["페이스북", "홈페이지"];
 
-export const adTypeEnglishName = ["facebook", "homepage"]; 
+export const adTypeEnglishName = ["facebook", "homepage"];
 
 export function adTypeTranslation(string){
     var korean = "";

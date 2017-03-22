@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Form,FormControl, Grid, Row, Col, Glyphicon} from 'react-bootstrap';
-import {colCentered,borderLine, selected, unSelected, divContent, leftAlign, rightAlign, formEdit, adTypeEnglishName, adTypeKoreanName} from '../../../css';
+import {colCentered,borderLine, selected, unSelected, leftAlign, rightAlign, adTypeEnglishName, adTypeKoreanName, OptionColCentered} from '../../../css';
 import config from '../../../config';
 import axios from 'axios';
 
@@ -41,7 +41,7 @@ class OptionItem extends React.Component  {
               <Col style = {leftAlign} xs = {7} md={6} lg = {6}>
                 <button style={this.props.adType=='All' ? selected : unSelected} onClick={this.handleAdTypeClick('All')} > 전체보기 </button>
               </Col>
-              <Col style = {colCentered} xs = {12} md={12} lg = {12}>
+              <Col style = {OptionColCentered} xs = {12} md={12} lg = {12}>
                 {this.typeSelect()}
               </Col>
             </Row>
