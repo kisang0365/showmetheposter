@@ -32,9 +32,7 @@ export const largeImgSize = {
       render() {
   	      return(
           <div>
-            <Carousel>
               <a style={bannerA} href="/advertise">
-                <Carousel.Item >
                   <MediaQuery minDeviceWidth={1025}>
                     <Image style={largeImgSize}  alt="900x500" src="/assets/logo.png"/>
                   </MediaQuery>
@@ -46,13 +44,7 @@ export const largeImgSize = {
                       <Image style={mediumImgSize}  alt="900x500" src="/assets/logo.png"/>
                     </MediaQuery>
                   </MediaQuery>
-
-                  <Carousel.Caption>
-
-                  </Carousel.Caption>
-                </Carousel.Item>
               </a>
-            </Carousel>
             <br/><br/><br/>
             </div>
           );

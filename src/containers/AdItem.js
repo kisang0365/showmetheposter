@@ -9,8 +9,8 @@ import {Grid, Row, Col} from 'react-bootstrap';
   export const smallImgSize = {
     border: "1px solid lightgrey",
     borderRadius:"10px",
-    width: "140px",
-    height: "140px",
+    width: "100px",
+    height: "120px",
   };
 
   export const mediumImgSize = {
@@ -27,7 +27,28 @@ import {Grid, Row, Col} from 'react-bootstrap';
     height: "250px",
   };
 
+  export const largeFont = {
+	marginLeft : "15px",
+	fontSize : "1.3em",
+        overflow : "hidden",
+	textOverflow:"ellipsis",
+	whiteSpace:"nowrap",
+  };
 
+  export const middleFont = {
+	marginLeft : "15px",
+	fontSize : "1.2em",
+        overflow : "hidden",
+	textOverflow:"ellipsis",
+	whiteSpace:"nowrap",
+  };
+  export const smallFont = {
+	marginLeft : "5px",
+	fontSize : "0.9em",
+        overflow : "hidden",
+	textOverflow:"ellipsis",
+	whiteSpace:"nowrap",
+  };
 
 export default class AdItem  extends React.Component  {
   constructor(props) {
@@ -75,7 +96,7 @@ export default class AdItem  extends React.Component  {
             onMouseOut={this.mouseOut.bind(this)} onClick={this.mouseClick.bind(this)}>
             <Grid style = {colCentered}>
               <Row>
-                  <Col xs = {6} md={3} lg={3}>
+                  <Col xs = {5} md={3} lg={3}>
                     <MediaQuery minDeviceWidth={1025}>
                       <Image style={largeImgSize} src={item.picUrl} rounded />
                     </MediaQuery>
@@ -88,20 +109,54 @@ export default class AdItem  extends React.Component  {
                       </MediaQuery>
                     </MediaQuery>
                   </Col>
-                  <Col style ={leftAlign}  xs = {6} md={3} lg={3}>
-                   <p style={fontStyle} >
-                    <b> [{item.name}] </b><br/>
-                   </p>
-                   <p style={fontStyle} >
-                    <b>03.22 ~ 04.05</b><br/>
-                   </p> 
-                   <p style={fontStyle} >
-                    <b>경품</b><br/>
-                   </p>
-		   <ul style= {fontStyle} >
-			<li>스타벅스 기프티콘 </li>
-			<li>슬리퍼 </li>
-		   </ul>
+                  <Col style ={leftAlign}  xs = {7} md={3} lg={3}>
+                    <MediaQuery minDeviceWidth={1025}>
+                  	 <p style={largeFont} >
+                    	 <b> [{item.name}] </b><br/>
+                   	</p>
+                   	<p style={largeFont} >
+                    	<b>03.22 ~ 04.05</b><br/>
+                   	</p> 
+                   	<p style={largeFont} >
+                    	<b>경품</b><br/>
+                   	</p>
+		   	<ul style= {largeFont} >
+				<li>스타벅스 기프티콘 </li>
+				<li>슬리퍼 </li>
+		   	</ul>
+                     </MediaQuery>
+                    <MediaQuery maxDeviceWidth={1224}>
+                      	<MediaQuery maxDeviceWidth={500}> 
+                  	 <p style={smallFont} >
+                    	 <b> [{item.name}] </b><br/>
+                   	 </p>
+                   	 <p style={smallFont} >
+                    	 <b>03.22 ~ 04.05</b><br/>
+                   	 </p> 
+                   	 <p style={smallFont} >
+                    	 <b>경품</b><br/>
+                   	 </p>
+		   	 <ul style= {smallFont} >
+				<li>스타벅스 기프티콘 </li>
+				<li>슬리퍼 </li>
+		   	 </ul>
+                     	</MediaQuery>
+                      	<MediaQuery minDeviceWidth={501}> 
+                  	 <p style={middleFont} >
+                    	 <b> [{item.name}] </b><br/>
+                   	</p>
+                   	<p style={middleFont} >
+                    	<b>03.22 ~ 04.05</b><br/>
+                   	</p> 
+                   	<p style={middleFont} >
+                    	<b>경품</b><br/>
+                   	</p>
+		   	<ul style= {middleFont} >
+				<li>스타벅스 기프티콘 </li>
+				<li>슬리퍼 </li>
+		   	</ul>
+                     	</MediaQuery>
+                     </MediaQuery>
 	         </Col>
              </Row>
            </Grid>

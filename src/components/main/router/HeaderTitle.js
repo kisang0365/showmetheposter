@@ -4,7 +4,7 @@ import {PageHeader} from 'react-bootstrap';
 export default class HeaderTitle extends React.Component  {
     render() {
 	      return(
-          <PageHeader  >Show me the Poster</PageHeader>
+          <PageHeader>Show <small>me the</small> Poster</PageHeader>
         );
     }
 }

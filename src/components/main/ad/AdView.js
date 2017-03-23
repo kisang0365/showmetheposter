@@ -48,7 +48,6 @@ class AdView extends React.Component  {
                 <br/><OptionItem adType={adType} onAdTypeClick={this.props.handleOnAdTypeChange} /><br/>
                 <ItemList ads={ads.slice(0,4)}/>
                 <ItemList ads={ads.slice(4,8)}/>
-                <ItemList ads={ads.slice(8,12)}/>
 
                 <PageItem onPageClick={this.props.handleOnPageChange} pages={listPage} nowPage={nowPage} />
                 <br/><br/><br/>

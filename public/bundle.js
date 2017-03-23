@@ -3889,7 +3889,7 @@ var unSelected = exports.unSelected = {
 
 var titleStyle = exports.titleStyle = {
   fontFamily: "Permanent Marker, serif",
-  fontSize: "2.5em",
+  fontSize: "1.8em",
   fontColor: "#666666"
 };
 var MenuItemTitle = exports.MenuItemTitle = {
@@ -14546,34 +14546,25 @@ var TopBanner = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          null,
+          'a',
+          { style: bannerA, href: '/advertise' },
           _react2.default.createElement(
-            'a',
-            { style: bannerA, href: '/advertise' },
+            _reactResponsive2.default,
+            { minDeviceWidth: 1025 },
+            _react2.default.createElement(_reactBootstrap.Image, { style: largeImgSize, alt: '900x500', src: '/assets/logo.png' })
+          ),
+          _react2.default.createElement(
+            _reactResponsive2.default,
+            { maxDeviceWidth: 1224 },
             _react2.default.createElement(
-              _reactBootstrap.Carousel.Item,
-              null,
-              _react2.default.createElement(
-                _reactResponsive2.default,
-                { minDeviceWidth: 1025 },
-                _react2.default.createElement(_reactBootstrap.Image, { style: largeImgSize, alt: '900x500', src: '/assets/logo.png' })
-              ),
-              _react2.default.createElement(
-                _reactResponsive2.default,
-                { maxDeviceWidth: 1224 },
-                _react2.default.createElement(
-                  _reactResponsive2.default,
-                  { maxDeviceWidth: 500 },
-                  _react2.default.createElement(_reactBootstrap.Image, { style: smallImgSize, alt: '900x500', src: '/assets/logo.png' })
-                ),
-                _react2.default.createElement(
-                  _reactResponsive2.default,
-                  { minDeviceWidth: 501 },
-                  _react2.default.createElement(_reactBootstrap.Image, { style: mediumImgSize, alt: '900x500', src: '/assets/logo.png' })
-                )
-              ),
-              _react2.default.createElement(_reactBootstrap.Carousel.Caption, null)
+              _reactResponsive2.default,
+              { maxDeviceWidth: 500 },
+              _react2.default.createElement(_reactBootstrap.Image, { style: smallImgSize, alt: '900x500', src: '/assets/logo.png' })
+            ),
+            _react2.default.createElement(
+              _reactResponsive2.default,
+              { minDeviceWidth: 501 },
+              _react2.default.createElement(_reactBootstrap.Image, { style: mediumImgSize, alt: '900x500', src: '/assets/logo.png' })
             )
           )
         ),
@@ -24763,7 +24754,6 @@ var AdView = function (_React$Component) {
         _react2.default.createElement('br', null),
         _react2.default.createElement(_ItemList2.default, { ads: ads.slice(0, 4) }),
         _react2.default.createElement(_ItemList2.default, { ads: ads.slice(4, 8) }),
-        _react2.default.createElement(_ItemList2.default, { ads: ads.slice(8, 12) }),
         _react2.default.createElement(_PageItem2.default, { onPageClick: this.props.handleOnPageChange, pages: listPage, nowPage: nowPage }),
         _react2.default.createElement('br', null),
         _react2.default.createElement('br', null),
@@ -25955,7 +25945,7 @@ exports.default = PartnerForm;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.largeImgSize = exports.mediumImgSize = exports.smallImgSize = undefined;
+exports.smallFont = exports.middleFont = exports.largeFont = exports.largeImgSize = exports.mediumImgSize = exports.smallImgSize = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -25992,8 +25982,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var smallImgSize = exports.smallImgSize = {
   border: "1px solid lightgrey",
   borderRadius: "10px",
-  width: "140px",
-  height: "140px"
+  width: "100px",
+  height: "120px"
 };
 
 var mediumImgSize = exports.mediumImgSize = {
@@ -26008,6 +25998,29 @@ var largeImgSize = exports.largeImgSize = {
   borderRadius: "10px",
   width: "250px",
   height: "250px"
+};
+
+var largeFont = exports.largeFont = {
+  marginLeft: "15px",
+  fontSize: "1.3em",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap"
+};
+
+var middleFont = exports.middleFont = {
+  marginLeft: "15px",
+  fontSize: "1.2em",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap"
+};
+var smallFont = exports.smallFont = {
+  marginLeft: "5px",
+  fontSize: "0.9em",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap"
 };
 
 var AdItem = function (_React$Component) {
@@ -26073,7 +26086,7 @@ var AdItem = function (_React$Component) {
             null,
             _react2.default.createElement(
               _reactBootstrap.Col,
-              { xs: 6, md: 3, lg: 3 },
+              { xs: 5, md: 3, lg: 3 },
               _react2.default.createElement(
                 _reactResponsive2.default,
                 { minDeviceWidth: 1025 },
@@ -26096,51 +26109,159 @@ var AdItem = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrap.Col,
-              { style: _css.leftAlign, xs: 6, md: 3, lg: 3 },
+              { style: _css.leftAlign, xs: 7, md: 3, lg: 3 },
               _react2.default.createElement(
-                'p',
-                { style: fontStyle },
+                _reactResponsive2.default,
+                { minDeviceWidth: 1025 },
                 _react2.default.createElement(
-                  'b',
-                  null,
-                  ' [',
-                  item.name,
-                  '] '
+                  'p',
+                  { style: largeFont },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    ' [',
+                    item.name,
+                    '] '
+                  ),
+                  _react2.default.createElement('br', null)
                 ),
-                _react2.default.createElement('br', null)
+                _react2.default.createElement(
+                  'p',
+                  { style: largeFont },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    '03.22 ~ 04.05'
+                  ),
+                  _react2.default.createElement('br', null)
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { style: largeFont },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    '\uACBD\uD488'
+                  ),
+                  _react2.default.createElement('br', null)
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { style: largeFont },
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    '\uC2AC\uB9AC\uD37C '
+                  )
+                )
               ),
               _react2.default.createElement(
-                'p',
-                { style: fontStyle },
+                _reactResponsive2.default,
+                { maxDeviceWidth: 1224 },
                 _react2.default.createElement(
-                  'b',
-                  null,
-                  '03.22 ~ 04.05'
+                  _reactResponsive2.default,
+                  { maxDeviceWidth: 500 },
+                  _react2.default.createElement(
+                    'p',
+                    { style: smallFont },
+                    _react2.default.createElement(
+                      'b',
+                      null,
+                      ' [',
+                      item.name,
+                      '] '
+                    ),
+                    _react2.default.createElement('br', null)
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { style: smallFont },
+                    _react2.default.createElement(
+                      'b',
+                      null,
+                      '03.22 ~ 04.05'
+                    ),
+                    _react2.default.createElement('br', null)
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { style: smallFont },
+                    _react2.default.createElement(
+                      'b',
+                      null,
+                      '\uACBD\uD488'
+                    ),
+                    _react2.default.createElement('br', null)
+                  ),
+                  _react2.default.createElement(
+                    'ul',
+                    { style: smallFont },
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '\uC2AC\uB9AC\uD37C '
+                    )
+                  )
                 ),
-                _react2.default.createElement('br', null)
-              ),
-              _react2.default.createElement(
-                'p',
-                { style: fontStyle },
                 _react2.default.createElement(
-                  'b',
-                  null,
-                  '\uACBD\uD488'
-                ),
-                _react2.default.createElement('br', null)
-              ),
-              _react2.default.createElement(
-                'ul',
-                { style: fontStyle },
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
-                ),
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  '\uC2AC\uB9AC\uD37C '
+                  _reactResponsive2.default,
+                  { minDeviceWidth: 501 },
+                  _react2.default.createElement(
+                    'p',
+                    { style: middleFont },
+                    _react2.default.createElement(
+                      'b',
+                      null,
+                      ' [',
+                      item.name,
+                      '] '
+                    ),
+                    _react2.default.createElement('br', null)
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { style: middleFont },
+                    _react2.default.createElement(
+                      'b',
+                      null,
+                      '03.22 ~ 04.05'
+                    ),
+                    _react2.default.createElement('br', null)
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { style: middleFont },
+                    _react2.default.createElement(
+                      'b',
+                      null,
+                      '\uACBD\uD488'
+                    ),
+                    _react2.default.createElement('br', null)
+                  ),
+                  _react2.default.createElement(
+                    'ul',
+                    { style: middleFont },
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '\uC2AC\uB9AC\uD37C '
+                    )
+                  )
                 )
               )
             )

@@ -65,7 +65,7 @@ export const unSelected = {
 
 export const titleStyle = {
   fontFamily: "Permanent Marker, serif",
-  fontSize: "2.5em",
+  fontSize: "1.8em",
   fontColor:"#666666"
 };
 export const MenuItemTitle = {
