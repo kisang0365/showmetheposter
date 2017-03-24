@@ -8,8 +8,9 @@ export const colCentered = {
 export const optionColCentered = {
   float: "none",
   margin: "0 auto",
-  marginTop: "50px",
   textAlign: "center",
+  marginTop: "20px",
+  marginBottom: "20px",
 };
 
 export const categorySelect = {
@@ -27,6 +28,14 @@ export const rightAlign = {
    textAlign: "right"
 };
 
+export const table = {
+   display:"table",
+   position: "absolute"
+};
+
+export const middleAlign = {
+   verticalAlign: "middle"
+};
 export const leftMargin ={
   float: "none",
   margin: "0 auto",

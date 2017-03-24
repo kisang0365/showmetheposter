@@ -57,6 +57,15 @@ class AdInput  extends React.Component  {
                     <label>expired (yyyyMMdd 형식)</label>
                     <Field name="expired" className="form-control" component="input" type="text" />
                   </div>
+                  <div>
+                    <label> 경품1 </label>
+                    <Field name="gift1" className="form-control" component="input" type="text" />
+                  </div>
+                  <div>
+                    <label> 경품2 </label>
+                    <Field name="gift2" className="form-control" component="input" type="text" />
+                  </div>
+
                   <button type="submit" className="btn btn-primary">Input Data!</button>
                 </form>
               </div>

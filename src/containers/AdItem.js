@@ -2,7 +2,7 @@ import React from 'react';
 import {Image} from 'react-bootstrap';
 import axios from 'axios';
 import * as config from '../config';
-import {colCentered, borderLine, divContent, leftAlign} from '../css';
+import {table, colCentered, borderLine, divContent, leftAlign, middleAlign} from '../css';
 import MediaQuery from 'react-responsive';
 import {Grid, Row, Col} from 'react-bootstrap';
 
@@ -129,13 +129,11 @@ export default class AdItem  extends React.Component  {
                       	<MediaQuery maxDeviceWidth={500}> 
                   	 <p style={smallFont} >
                     	 <b> [{item.name}] </b><br/>
-                   	 </p>
+			 </p>
                    	 <p style={smallFont} >
-                    	 <b>03.22 ~ 04.05</b><br/>
-                   	 </p> 
+                    	 <b>03.22 ~ 04.05</b><br/></p>
                    	 <p style={smallFont} >
-                    	 <b>경품</b><br/>
-                   	 </p>
+                    	 <b>경품</b><br/></p>
 		   	 <ul style= {smallFont} >
 				<li>스타벅스 기프티콘 </li>
 				<li>슬리퍼 </li>
