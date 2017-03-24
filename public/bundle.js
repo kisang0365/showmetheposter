@@ -14443,7 +14443,9 @@ function adInputData(_ref) {
         url = _ref.url,
         picUrl = _ref.picUrl,
         inputTime = _ref.inputTime,
-        expired = _ref.expired;
+        expired = _ref.expired,
+        gift1 = _ref.gift1,
+        gift2 = _ref.gift2;
 
     return function (dispatch) {
         var instance = _axios2.default.create({
@@ -14452,7 +14454,7 @@ function adInputData(_ref) {
             headers: { 'x-access-token': localStorage.getItem('token') }
         });
 
-        instance.post('/ad/input', { name: name, adType: adType, url: url, picUrl: picUrl, inputTime: inputTime, expired: expired }).then(function (response) {
+        instance.post('/ad/input', { name: name, adType: adType, url: url, picUrl: picUrl, inputTime: inputTime, expired: expired, gift1: gift1, gift2: gift2 }).then(function (response) {
             dispatch({ type: types.AD_INPUT_SUCCESS });
             alert("input success");
         }).catch(function (error) {
@@ -26161,9 +26163,15 @@ var AdItem = function (_React$Component) {
                   _react2.default.createElement(
                     'b',
                     null,
-                    '03.22 ~ 04.05'
-                  ),
-                  _react2.default.createElement('br', null)
+                    ' ',
+                    item.inputTime.toString().substring(4, 6),
+                    '.',
+                    item.inputTime.toString().substring(6, 8),
+                    ' ~ ',
+                    item.expire.toString().substring(4, 6),
+                    '.',
+                    item.expire.toString().substring(6, 8)
+                  )
                 ),
                 _react2.default.createElement(
                   'p',
@@ -26181,12 +26189,12 @@ var AdItem = function (_React$Component) {
                   _react2.default.createElement(
                     'li',
                     null,
-                    '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
+                    item.gift1
                   ),
                   _react2.default.createElement(
                     'li',
                     null,
-                    '\uC2AC\uB9AC\uD37C '
+                    item.gift2
                   )
                 )
               ),
@@ -26214,9 +26222,16 @@ var AdItem = function (_React$Component) {
                     _react2.default.createElement(
                       'b',
                       null,
-                      '03.22 ~ 04.05'
-                    ),
-                    _react2.default.createElement('br', null)
+                      ' ',
+                      item.inputTime.toString().substring(4, 6),
+                      '.',
+                      item.inputTime.toString().substring(6, 8),
+                      ' ~ ',
+                      item.expire.toString().substring(4, 6),
+                      '.',
+                      item.expire.toString().substring(6, 8),
+                      ' '
+                    )
                   ),
                   _react2.default.createElement(
                     'p',
@@ -26234,12 +26249,14 @@ var AdItem = function (_React$Component) {
                     _react2.default.createElement(
                       'li',
                       null,
-                      '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
+                      item.gift1,
+                      ' '
                     ),
                     _react2.default.createElement(
                       'li',
                       null,
-                      '\uC2AC\uB9AC\uD37C '
+                      item.gift2,
+                      ' '
                     )
                   )
                 ),
@@ -26264,9 +26281,16 @@ var AdItem = function (_React$Component) {
                     _react2.default.createElement(
                       'b',
                       null,
-                      '03.22 ~ 04.05'
-                    ),
-                    _react2.default.createElement('br', null)
+                      ' ',
+                      item.inputTime.toString().substring(4, 6),
+                      '.',
+                      item.inputTime.toString().substring(6, 8),
+                      ' ~ ',
+                      item.expire.toString().substring(4, 6),
+                      '.',
+                      item.expire.toString().substring(6, 8),
+                      ' '
+                    )
                   ),
                   _react2.default.createElement(
                     'p',
@@ -26284,12 +26308,13 @@ var AdItem = function (_React$Component) {
                     _react2.default.createElement(
                       'li',
                       null,
-                      '\uC2A4\uD0C0\uBC85\uC2A4 \uAE30\uD504\uD2F0\uCF58 '
+                      item.gift1,
+                      ' '
                     ),
                     _react2.default.createElement(
                       'li',
                       null,
-                      '\uC2AC\uB9AC\uD37C '
+                      item.gift2
                     )
                   )
                 )

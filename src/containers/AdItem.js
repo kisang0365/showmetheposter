@@ -78,7 +78,7 @@ export default class AdItem  extends React.Component  {
   mouseOut() {
       this.setState({hover: false});
   }
-
+  
   render() {
       var linkStyle = { cursor:'pointer',whiteSpace:"normal"};
       var fontStyle = { color:'black',whiteSpace: "nowrap",textOverflow: "ellipsis", overflow: "hidden"};
@@ -115,14 +115,14 @@ export default class AdItem  extends React.Component  {
                     	 <b> [{item.name}] </b><br/>
                    	</p>
                    	<p style={largeFont} >
-                    	<b>03.22 ~ 04.05</b><br/>
+			<b> {item.inputTime.toString().substring(4,6)}.{item.inputTime.toString().substring(6,8)} ~ {item.expire.toString().substring(4,6)}.{item.expire.toString().substring(6,8) }</b>
                    	</p> 
                    	<p style={largeFont} >
                     	<b>경품</b><br/>
                    	</p>
 		   	<ul style= {largeFont} >
-				<li>스타벅스 기프티콘 </li>
-				<li>슬리퍼 </li>
+				<li>{item.gift1}</li>
+				<li>{item.gift2}</li>
 		   	</ul>
                      </MediaQuery>
                     <MediaQuery maxDeviceWidth={1224}>
@@ -131,12 +131,13 @@ export default class AdItem  extends React.Component  {
                     	 <b> [{item.name}] </b><br/>
 			 </p>
                    	 <p style={smallFont} >
-                    	 <b>03.22 ~ 04.05</b><br/></p>
-                   	 <p style={smallFont} >
+			<b> {item.inputTime.toString().substring(4,6)}.{item.inputTime.toString().substring(6,8)} ~ {item.expire.toString().substring(4,6)}.{item.expire.toString().substring(6,8)} </b>
+                   	</p> 
+			<p style={smallFont} >
                     	 <b>경품</b><br/></p>
 		   	 <ul style= {smallFont} >
-				<li>스타벅스 기프티콘 </li>
-				<li>슬리퍼 </li>
+				<li>{item.gift1} </li>
+				<li>{item.gift2} </li>
 		   	 </ul>
                      	</MediaQuery>
                       	<MediaQuery minDeviceWidth={501}> 
@@ -144,14 +145,14 @@ export default class AdItem  extends React.Component  {
                     	 <b> [{item.name}] </b><br/>
                    	</p>
                    	<p style={middleFont} >
-                    	<b>03.22 ~ 04.05</b><br/>
+			<b> {item.inputTime.toString().substring(4,6)}.{item.inputTime.toString().substring(6,8)} ~ {item.expire.toString().substring(4,6)}.{item.expire.toString().substring(6,8)} </b>
                    	</p> 
                    	<p style={middleFont} >
                     	<b>경품</b><br/>
                    	</p>
 		   	<ul style= {middleFont} >
-				<li>스타벅스 기프티콘 </li>
-				<li>슬리퍼 </li>
+				<li>{item.gift1} </li>
+				<li>{item.gift2}</li>
 		   	</ul>
                      	</MediaQuery>
                      </MediaQuery>

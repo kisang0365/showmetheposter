@@ -41,7 +41,7 @@ export function changePage() {
 
 
 
-export function adInputData({name, adType, url, picUrl, inputTime, expired}){
+export function adInputData({name, adType, url, picUrl, inputTime, expired, gift1, gift2}){
   return function (dispatch){
     var instance = axios.create({
         baseURL: API_ROOT_URL,
@@ -49,7 +49,7 @@ export function adInputData({name, adType, url, picUrl, inputTime, expired}){
         headers: {'x-access-token': localStorage.getItem('token') }
     });
 
-    instance.post(`/ad/input`, {name, adType, url,picUrl, inputTime,expired })
+    instance.post(`/ad/input`, {name, adType, url,picUrl, inputTime,expired, gift1, gift2 })
     .then(response => {
       dispatch({ type: types.AD_INPUT_SUCCESS });
       alert("input success");
